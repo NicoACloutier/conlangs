@@ -1,0 +1,429 @@
+\documentclass{article}[10pt]
+
+\usepackage[a4paper, total={6in, 10in}]{geometry}
+\usepackage{tabularx}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{tipa}
+\usepackage{multicol}
+\usepackage{gb4e}
+\usepackage{titling}
+\usepackage{tabularray}
+\usepackage{qtree}
+\usepackage{amssymb}
+\usepackage{vowel}
+
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.3em}%
+}
+
+\newcommand{\subauthor}[1]{%
+  \postauthor{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.3em}%
+}
+
+\newcommand{\define}[2]{\emph{#1}: ``#2.'' \\}
+
+\title{Landa Grammar\\with Texts and Vocabulary}
+\subtitle{
+\emph{Cita gui Muha Landa\\hua Quehangone je Muhayune}
+%\vspace{0.3cm} \\ \includegraphics[scale=0.22]{title2.png}
+}
+\author{Nicolas Antonio Cloutier\\\emph{Nicola Antonio Calutie}}
+
+\begin{document}
+\maketitle
+
+\vspace{0.25in}
+
+{\begin{center}
+\includegraphics[scale=0.25]{circleflag.png} \end{center}}
+
+\vspace{0.25in}
+
+{\begin{center}
+\emph{Eno cuhamen hua muha gui cono ticaluca\\mpalaquence, tano nxeja mpalaquence.}\\
+\vspace{0.5cm}
+---Teli Paxe
+\end{center}}
+
+
+\clearpage
+{\bf \emph{0 Introduction}}\\
+
+
+{\bf 0.1 Abbreviations}
+\begin{multicols}{3}
+\noindent
+1: first person\\
+2: second person\\
+3: 3\textsuperscript{rd} person\\
+\textsc{acc}: Accusative\\
+\textsc{act}: action\\
+\textsc{pl}: Plural\\
+\textsc{sg}: Singular\\
+\textsc{stat}: state\\
+\textsc{trans}: transitive changing-of-state\\
+\textsc{unwill}: unwillingly\\
+\textsc{will}: willingly\\
+\end{multicols}
+
+\clearpage
+{\bf \emph{1 Phonology}}\\
+
+\begin{center}
+\emph{Table I: Consonants}
+\begin{tabular}{ |c|c|c|c|c|c|c| }
+\hline
+ & \bf{Labial} & \bf{Alveolar} & \bf{Postalveolar} & \bf{Palatal} & \bf{Velar} & \bf{Glottal} \\ \hline
+\bf{Plosive} & (\textsuperscript{m})p & (\textsuperscript{n})t (\textsuperscript{n})d & & & (\textsuperscript{\textipa{N}})k (\textsuperscript{\textipa{N}})g & \textipa{P} \\ \hline
+\bf{Nasal} & \textipa{\r*m} m  & \textipa{\r*n} n  & & \textipa{\r*\textltailn} \textltailn  & \textipa{\r*N} \textipa{N}  & \\ \hline
+\bf{Fricative} & (\textsuperscript{m})f & (\textsuperscript{n})s & (\textsuperscript{n})\textesh & &  & h \\ \hline
+\bf{Approximant} & w & l & j & & (w) &  \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\emph{Table II: Romanization of consonants}
+\begin{tabular}{ |c|c|c|c|c|c|c| }
+\hline
+ & \bf{Labial} & \bf{Alveolar} & \bf{Postalveolar} & \bf{Palatal} & \bf{Velar} & \bf{Glottal} \\ \hline
+\bf{Plosive} & (m)p & (n)t (n)d & & & (n)c/qu (m)g/gu & h \\ \hline
+\bf{Nasal} & hm m & hn n & h\~{n} \~{n} & & hng/hngu ng/ngu & \\ \hline
+\bf{Fricative} & (m)f & (n)z/c & (n)x & & & j \\ \hline
+\bf{Approximant} & hu & l & y & & & \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{multicols}{2}
+{\begin{center}
+\emph{Figure I: Vowels}\\
+ \Large
+\begin{vowel}
+	\putcvowel[l]{i}{1}
+	\putcvowel[l]{e}{2}
+	\putcvowel[r]{o}{7}
+	\putcvowel[r]{u}{8}
+	\putcvowel[l]{a}{4}
+	\putcvowel[l]{\textipa{1}}{9}
+\end{vowel} \end{center}}
+
+{\begin{center}
+\emph{Figure II: Romanization of vowels}\\
+ \Large
+\begin{vowel}
+	\putcvowel[l]{i}{1}
+	\putcvowel[l]{e}{2}
+	\putcvowel[r]{o}{7}
+	\putcvowel[r]{u}{8}
+	\putcvowel[l]{a}{4}
+	\putcvowel[l]{\"{i}}{9}
+\end{vowel} \end{center}}
+\end{multicols}
+
+Spanish rules are followed when multiple romanizations given. For example, /si/ is written as $\langle$ci$\rangle$, but /sa/ is written as $\langle$za$\rangle$, /gi/ is written as $\langle$gui$\rangle$ but /ga/ is written as $\langle$ga$\rangle$. All syllables in Landa are (C)V, except word-finally, where they are (C)V(N), where (N) refers to any nasal.. Adjacent vowels are treated as nuclei of separate syllables. Primary stress always falls on the penultimate syllable of a multisyllabic word and the only syllable of a monosyllabic word. This system does at times create ambiguous spellings, context is necessary to discern these cases.
+
+\clearpage
+{\bf \emph{2 Grammar}}\\
+
+{\bf 2.0 Verbs in Landa}
+
+Predicates form a unique part of Landa syntax. The way it handles verbs was inspired by the way that functional programming handles its predicates. In functional programming, common functions such as \texttt{filter}, \texttt{map}, and \texttt{reduce} describe a manner of performing an action, but not the semantics of the action itself. This is instead described by a predicate, passed in as an argument to a function just as typical arguments are passed into functions and methods in other programming paradigms. For example, one programmer may write a program utilizing the \texttt{filter} function that passes a condition predicate checking whether elements in an array of integers are above a certain threshold. In this case, the condition function would be defined separately and passed in, along with the array itself, to the \texttt{filter} function. Another programmer may only keep elements in this array that are even, defining their own predicate to check for even numbers and calling the same \texttt{filter} function. In both cases, the function call could be written in pseudocode as \texttt{filter(predicate, array)}, where \texttt{predicate} in the first case would refer to a previously defined function that returns a Boolean value of \texttt{True} when an integer is above a designated threshold and \texttt{False} otherwise, and in the second case would refer to another previously defined function that returns a Boolean value of \texttt{True} when an integer is divisible by two and \texttt{False} otherwise.\\
+
+This design was the inspiration for the way verbs are handled in Landa. ``Manner verbs'' are considered the center of verb phrases, but include very little specific semantic information. They instead mark things such as whether an action was intentional and whether it is a state or action. Verbs describing specific semantic information are relegated to the status of suffixes on noun phrases, and are generally adjunct to whatever clause they appear in. Take the following sentence:
+
+\begin{exe}
+\ex 
+\gll j\"{i}-ye ndego-ca\\
+\textsc{unwill}.sense.\textsc{stat}-1.\textsc{sg} dog-exist\\
+\trans \emph{I see the dog.}
+\end{exe}
+
+The base verb stem here is \emph{j\"{i}}, meaning ``to unwillingly sense an object's state.'' The object itself is described in the noun phrase \emph{ndegoca}, where \emph{ndego} means ``dog'' and the suffix \emph{ca} means ``to exist.'' Thus, the overall sentence \emph{j\"{i}ye ndegoca} literally means ``I unwillingly sensed the state of the dog, existing,'' but can be more leniently translated to ``I saw\footnote{This could also refer to hearing or touching a dog unwillingly, to specify utilize instrumental statements with the body part used to sense in question.} the dog.'' In future clauses, if \emph{ca} is used again, it can be dropped, or replaced with the general proverb \emph{zu}, which can be used to refer back to any previously used semantic verb. Semantic verbs can also be dropped entirely if previously mentioned, which will typically imply that whatever most recently previously used semantic verb still stands if one has previously been mentioned, and otherwise implies the semantic verb \emph{ca}, ``to exist.'' Thus, the sentence could be rewritten as \emph{j\"{i}ye ndego}, with no change in meaning.\\
+
+{\bf 2.1 Basic word order}
+
+Word order in Landa is fairly free, but a common basic word order is semantic accusative, manner verb, object NP. All of the following are appropriate orderings:
+
+\begin{exe}
+\ex
+\gll cale-'n j\"{i}-cu hempo-nce\\
+money-\textsc{acc} \textsc{unwill}.sense.\textsc{stat}-2.\textsc{sg} person-have\\
+\trans \emph{You notice that the person has money (neutral, slight emphasis on money).}
+
+\ex
+\gll j\"{i}-cu cale-'n hempo-nce\\
+\textsc{unwill}.sense.\textsc{stat}-2.\textsc{sg} money-\textsc{acc} person-have\\
+\trans \emph{You notice that the person has money (emphasis on you noticing).}
+
+\ex
+\gll hempo-nce j\"{i}-cu cale-'n\\
+ person-have \textsc{unwill}.sense.\textsc{stat}-2.\textsc{sg} money-\textsc{acc} \\
+\trans \emph{You notice that the person has money (emphasis on the person having).}
+\end{exe}
+
+When a noun is included in the subject position, it is typically the first thing to be mentioned, with other words taking a free order after it, as follows:
+\begin{exe}
+\ex
+\gll ndego cale-'n {j\"{i}-$\varnothing$} {hempo-nce}\\
+dog money-\textsc{acc} \textsc{unwill}.sense.\textsc{stat}-3.\textsc{sg} person-have\\
+\trans \emph{The dog notices that the person has money (neutral, slight emphasis on money).}
+
+\ex
+\gll ndego {j\"{i}-$\varnothing$} {cale-'n} hempo-nce\\
+dog \textsc{unwill}.sense.\textsc{stat}-3.\textsc{sg} money-\textsc{acc} person-have\\
+\trans \emph{The dog notices that the person has money (emphasis on the dog noticing).}
+
+\ex
+\gll ndego hempo-nce {j\"{i}-$\varnothing$} {cale-'n}\\
+ dog person-have \textsc{unwill}.sense.\textsc{stat}-3.\textsc{sg} money-\textsc{acc} \\
+\trans \emph{The dog notices that the person has money (emphasis on the person having).}
+\end{exe}
+
+{\bf 2.2 Person verb conjugations}
+
+Personal verb conjugations for Landa, marked on manner verbs, are given as follows:
+
+\begin{center}
+Table III: Verb inflection suffixes\\\vspace{1.5mm}
+\begin{tabular}{|l|l|l|l|}
+\hline
+ Number & 1\textsuperscript{st} person & 2\textsuperscript{nd} person & 3\textsuperscript{rd} person \\ \hline
+ Singular & \emph{-ye} & \emph{-cu} & \emph{-} \\ \hline
+Plural & \emph{-ce} & \emph{-no} & \emph{-mp\"{i}} \\ \hline
+\end{tabular}
+\end{center}
+
+{\bf 2.3 Pronouns}
+
+Personal pronouns can be omitted in statements with conjugated verbs, but may be included for emphasis as necessary. The basic personal pronouns of Landa are:
+
+\begin{center}
+Table IV: Personal pronouns\\\vspace{1.5mm}
+\begin{tabular}{|l|l|l|l|}
+\hline
+ Number & 1\textsuperscript{st} person & 2\textsuperscript{nd} person & 3\textsuperscript{rd} person \\ \hline
+ Singular & qui & he & zo \\ \hline
+Plural & qu\"{i} & pa & nzo \\ \hline
+\end{tabular}
+\end{center}
+
+{\bf 2.4 Possession}
+
+In Landa, possession of one noun to another is marked simply by placing the possessing noun after the possessed noun, with \emph{gui}, ``of,'' in between, as follows:
+
+\begin{exe}
+\ex
+\gll ndego gui hempo\\
+dog of man\\
+\trans \emph{The man's dog.}
+\end{exe}
+
+There is no special marking for pronouns, they are treated exactly as nouns, as follows:
+
+\begin{exe}
+\ex
+\gll ndego gui zo\\
+dog of 3.\textsc{sg}\\
+\trans \emph{His dog.}
+\end{exe}
+
+{\bf 2.5 Accusatives}
+
+In Landa, accusatives of semantic verbs are marked with the enclitic \emph{-n}. In the case where the word already ends in a nasal, it goes phonologically unchanged, and an apostrophe is added to the end in written language. For example, \emph{aceng}, ``east,'' would in the accusative be written \emph{aceng'}, as follows:
+\begin{exe}
+\ex
+\gll jalozo-ju-'n li-ye he-ga\\
+music-type-\textsc{acc} \textsc{will}.change.\textsc{act}.\textsc{trans}-1.\textsc{sg} 2.\textsc{sg}-hate\\
+\trans \emph{I made you hate that type of music.}
+
+\ex
+\gll aceng-' que-$\varnothing$ hempo-ca\\
+east-\textsc{acc} \textsc{will}.change.\textsc{stat}-3.\textsc{sg} person-be.located\\
+\trans \emph{The person moved eastward.}
+\end{exe}
+
+{\bf 2.6 The self}
+
+For certain sentences, \emph{ne}, ``the self,'' can be used as the anchor of the semantic verb, as follows:
+\begin{exe}
+\ex
+\gll nc\"{i}-ye ne-ti\\
+\textsc{unwill}.temporarily.\textsc{stat}-1.\textsc{sg} self-be.happy\\
+\trans \emph{I am feeling happy.}
+
+\ex
+\gll li-ye ne-mpa\\
+\textsc{will}.change.\textsc{act}-1.\textsc{sg} self-smile\\
+\trans \emph{I smile.}
+\end{exe}
+
+{\bf 2.7 Numbers}
+Landa uses base 10. Cry about it. A number is read out by saying the value of a digit followed by the name of that digit (e.g. hundred, thousand, ten). The following tables contain digits and place names, respectively.
+\begin{center}
+\emph{Table III: Digits 0-9\emph{\footnote{Note that in gloss in this grammar the digit values 1, 2, and 3 are glossed as ``one'', ``two'', and ``three'' in order to avoid confusion with the first, second, and third person markers that are glossed as ``1'', ``2'', and ``3'', respectively, but all other digits are glossed in Arabic numerals.}}}\\
+\begin{tabularx}{0.5\textwidth}{ |X|X| }
+\hline
+{\bf Name} & \bf{Value} \\ \hline
+ \~{n}azo & 0 \\ \hline
+ mfeli & 1 \\ \hline
+ hmico & 2 \\ \hline
+ ntaju & 3 \\ \hline
+ huale & 4 \\ \hline
+ heho & 5 \\ \hline
+ eling & 6 \\ \hline
+ yel\"{i} & 7 \\ \hline
+ quenga & 8 \\ \hline
+ ncine & 9 \\ \hline
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\emph{Table IV: Digit places}\\
+\begin{tabularx}{0.5\textwidth}{ |X|X| }
+\hline
+{\bf Name} & \bf{Value} \\ \hline
+ ndezo & $10^{-5}$ \\ \hline
+ mfado & $10^{-4}$ \\ \hline
+ xamfi & $10^{-3}$ \\ \hline
+ pongui & $10^{-2}$ \\ \hline
+ juhua & $10^{-1}$ \\ \hline
+ mfeli & $10^{0}$ \footnote{This need not be used if the ones digit comes at the end of a number, but it must be used otherwise.} \\ \hline
+ h\~{n}eye & $10^1$ \\ \hline
+ luha & $10^2$ \\ \hline
+ yaju & $10^3$ \\ \hline
+ uhuilo & $10^4$ \\ \hline
+ xehmi & $10^5$ \\ \hline
+\end{tabularx}
+\end{center}
+
+\clearpage
+{\bf \emph{3 Lexicon}}\\
+
+{\bf 3.1 Nouns and Adjectives}
+\begin{multicols}{3}
+\noindent
+\define{aceng}{east, the east}
+\define{caho}{home, house, dwelling}
+\define{cale}{money, gold}
+\define{cingue}{thing}
+\define{cinguene}{the universe, the world}
+\define{cita}{rule, convention}
+\define{cuha}{action}
+\define{hempo}{person}
+\define{heni}{tower, building}
+\define{jale}{large in amount, plentiful}
+\define{jalozo}{music}
+\define{jalozoju}{type of music}
+\define{landa}{functional programming}
+\define{mpalaque}{understanding}
+\define{muha}{language}
+\define{muha Landa}{language name, Landa}
+\define{muhango}{speech, conversation}
+\define{muhayu}{word}
+\define{ndego}{dog, canine, wolf}
+\define{ne}{the self}
+\define{nxeja}{universe, world}
+\define{nxomo}{time}
+\define{pozu}{happiness, happy}
+\define{queha}{written word}
+\define{quehango}{piece of writing}
+\define{ticalu}{fruit}
+\define{zaca}{flat, level}
+\define{zacan\"{i}}{plains, flatlands}
+\end{multicols}
+
+{\bf 3.2 Manner verbs}
+\begin{multicols}{3}
+\noindent
+\define{a}{to fail at changing an object's state}
+\define{co}{to willingly change an object's state}
+\define{e}{to willingly partake in an action}
+\define{'e}{to unwillingly partake in an action}
+\define{j\"{i}}{to unwillingly sense an object's state}
+\define{li}{to willingly change an object's action}
+\define{nc\"{i}}{to be unwillingly in a temporary state}
+\define{que}{to willingly change state}
+\define{ta}{to be willingly and persistently in a state}
+\define{to}{to be unwillingly and persistently in a state}
+\define{za}{to willingly sense an object's state}
+\define{zuca}{to be unwillingly cognizant of an object's state}
+\end{multicols}
+
+{\bf 3.3 Semantic verb suffixes}
+\begin{multicols}{3}
+\noindent
+\define{ca}{to exist (for something), to be located (somewhere)}
+\define{ga}{to hate (something)}
+\define{gu\"{i}}{to be equivalent (to something)}
+\define{men}{to try something}
+\define{me\~{n}}{to discover something (about something)}
+\define{mpa}{to smile (towards something)}
+\define{m\"{i}}{to be an instance of something}
+\define{nce}{to have something}
+\define{nza}{to feel (something)}
+\define{ti}{to be happy (about something)}
+\define{zu}{proverb}
+\end{multicols}
+
+{\bf 3.4 Derivational affixes}
+\begin{multicols}{3}
+\noindent
+\define{-ju}{a type of something}
+\define{-ne}{a collection of something}
+\define{-n\"{i}}{a place or land of something}
+\define{-ngo}{an instance of something}
+\define{-yu}{a piece of something larger}
+\end{multicols}
+
+{\bf 3.5 Assorted}
+\begin{multicols}{3}
+\noindent
+\define{gui}{of}
+\define{hua}{with}
+\define{huezo}{on, in, inside}
+\define{je}{and}
+\define{jagui}{while}
+\define{po}{the self}
+\end{multicols}
+
+\clearpage
+{\bf \emph{4 Short texts}}\\
+
+\begin{center}
+\bf The Tower of Babel\\
+\emph{Papela heni}\\
+\end{center}
+
+Nxomo jale, Cinguene to muhance mfeli. Jagui aceng' quemp\"{i} hempoca, 'emp\"{i} zacan\"{i}me\~{n} huezo Xina, comp\"{i} caho gui nzo.
+
+\begin{exe}
+\ex
+\gll nxomo jale cingue-ne to-$\varnothing$ muha-nce mfeli\\
+time plentiful thing-collection \textsc{unwill}.persistently.\textsc{stat}-3.\textsc{sg} language-have one\\
+\trans \emph{Long ago, he world had one language.}
+
+\ex
+\gll jagui aceng-' que-mp\"{i} hempo-ca\\
+while east-\textsc{abs} \textsc{will}.change.\textsc{stat}-3.\textsc{pl} person-be.located\\
+\trans \emph{While they moved eastward,}
+
+\ex
+\gll 'e-mp\"{i} zaca-n\"{i}-me\~{n} huezo xina,\\
+\textsc{unwill}.partake.\textsc{act}-3.\textsc{pl} flat-place-discover in Shinar\\
+\trans \emph{they found plains in Shinar,}
+
+\ex
+\gll co-mp\"{i} caho gui nzo\\
+\textsc{will}.change.\textsc{stat}.\textsc{trans}-3.\textsc{pl} home of 3.\textsc{pl}\\
+\trans \emph{and made it their home.}
+\end{exe}
+
+\end{document}
