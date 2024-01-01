@@ -1,0 +1,1886 @@
+\documentclass{article}[10pt]
+
+\usepackage[a4paper, total={6in, 10in}]{geometry}
+\usepackage{tabularx}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{tipa}
+\usepackage{multicol}
+\usepackage{gb4e}
+\usepackage{titling}
+\usepackage{tabularray}
+\usepackage{qtree}
+
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.3em}%
+}
+
+\newcommand{\subauthor}[1]{%
+  \postauthor{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.3em}%
+}
+
+\title{Hotadu Grammar\\with Texts and Vocabulary}
+\subtitle{
+\emph{P\.{a}s zehho shehmi'gi Khota d\.{u}\\m\.{o} heppa m\.{o} babshehmi}
+%\vspace{0.3cm} \\ \includegraphics[scale=0.22]{title2.png}
+}
+\author{Nicolas Antonio Cloutier\\\emph{Nikolas Antoniyo Kel\.{u}tiye}}
+
+\begin{document}
+\maketitle
+
+\vspace{0.25in}
+
+{\begin{center}
+\includegraphics[scale=0.25]{circleflag.png} \end{center}}
+
+\vspace{0.25in}
+
+{\begin{center}
+\emph{Kos, wahwah sam ay, \\kos, hir nehha Sohm\.{e} ba hej\.{o}'ssho, \\yisa wah sam khota te hmaha zukk\.{o} bak.\\}
+\vspace{0.5cm}
+---Teri Per\.{a}tshet, maj z\.{a}g shehmi te Ingan.
+\end{center}}
+
+
+\clearpage
+{\bf \emph{0 Introduction}}\\
+
+Hotadu (\emph{Khota d\.{u}}, ``the language of things'') is a constructed engineered language that was started in March 2023 by Nicolas Antonio Cloutier. It is an engineered language with no verbs. All independently grammatical phrases in Hotadu can be syntactically parsed as noun phrases, which is what inspired the language's name. It was created for purely recreational purposes, and has been considered by the creator more or less finished since late August 2023. All changes since then have been minor additions to vocabulary or grammar.\\
+
+{\bf 0.1 Abbreviations}
+\begin{multicols}{3}
+\noindent
+\textsc{1}: first person\\
+\textsc{2}: second person\\
+\textsc{3}: third person\\
+BoS: beginning-of-sentence particle\\
+\textsc{celeb}: celebratory particle\\
+\textsc{close}: nearby deictic modifier\\
+\textsc{confusion}: confusion particle\\
+\textsc{cop}: pseudo-copula\\
+\textsc{dem}: demonstrative\\
+excl.: exclamation\\
+\textsc{far}: far-away deictic modifier\\
+\textsc{gen}: genetive\\
+EoS: end-of-sentence particle\\
+\textsc{he}: heigher-than-expectations particle\\
+\textsc{inq}: inquisitive\\
+\textsc{instr}: instrumental\\
+\textsc{le}: lower-than-expectations particle\\
+\textsc{mock}: mocking particle\\
+n.: noun\\
+N: noun\\
+NP: noun phrase\\
+\textsc{opt}: optative\\
+\textsc{ord}: ordinal number\\
+\textsc{pol}: politeness marker\\
+\textsc{possible}: possible state particle\\
+prn.: pronoun\\
+R: relational\\
+\textsc{refl}: reflexive\\
+\textsc{ind.refl}: individual reflexive\\
+\textsc{regret}: regrettable event particle\\
+RP: relational phrase\\
+S: statement\\
+\textsc{surprise}: surprise particle\\
+V: verb\\
+\textsc{voc}: vocative\\
+VP: verb phrase\\
+\textsc{y/n}: yes or no question\\
+\end{multicols}
+
+\clearpage
+{\bf \emph{1 Phonology}}\\
+
+Hotadu is not a language particularly concerned with phonology. Its creation was mostly motivated by a will to explore grammatical and syntactic concepts, and as such its sound system may leave something to be desired for the more phonologically focused of language constructors. This is, for the most part, on purpose, as having a simpler phonology allows more focus to be put on the more interesting aspects of the language. That being said, its phonology can be defined as follows:\\
+
+{\bf 1.1 Phonemes}
+
+\begin{center}
+\emph{Table I: Consonants}
+\begin{tabular}{ |c|c|c|c|c|c|c| }
+\hline
+ & \bf{Labial} & \bf{Alveolar} & \bf{Postalveolar} & \bf{Palatal} & \bf{Velar} & \bf{Glottal} \\ \hline
+\bf{Plosive} & p b & t d & & & k g & \\ \hline
+\bf{Nasal} & \textipa{\r*m} m & \textipa{\r*n} n & & & & \\ \hline
+\bf{Trill} & & \textipa{\r*r} r & & & & \\ \hline
+\bf{Fricative} & & s z & \textesh \  \textyogh & & x \textgamma & h \\ \hline
+\bf{Approximant} & (w) &  & & j & (w)  &  \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\emph{Table II: Romanization of consonants}
+\begin{tabular}{ |c|c|c|c|c|c|c| }
+\hline
+ & \bf{Labial} & \bf{Alveolar} & \bf{Postalveolar} & \bf{Palatal} & \bf{Velar} & \bf{Glottal} \\ \hline
+\bf{Plosive} & p b & t d & & & k g & \\ \hline
+\bf{Nasal} & hm m & hn n & & & & \\ \hline
+\bf{Trill} & & hr r & & & & \\ \hline
+\bf{Fricative} & & s z & sh j & & kh gh & h \\ \hline
+\bf{Approximant} & w & & & y & w & \\ \hline
+\end{tabular}
+\end{center}
+
+The language uses a standard five-vowel system with length. A long vowel is written with a dot diacritic over it (e.g. long $\langle$a$\rangle$ is written $\langle$\.{a}$\rangle$), with the exception of long $\langle$i$\rangle$, which is written $\langle$\'{i}$\rangle$.\\
+
+{\bf 1.2 Syllable structure}\\
+
+The language has a CV syllable structure, except for word-finally, where it is CV(C), and word-initially, where it is (C)V. Loan words can be (C)V(C) in any position, and compound words are CV(C) in all positions except initial, where they are (C)V(C). Intervocally, all consonants can receive phonemic gemination. If a consonant that morphologically should receive gemination appears phonologically next to another consonant or at the very end or beginning of a statement, it loses its gemination. The clusters [hr], [sh], [kh], [hm], [hn,] and [gh] are written $\langle$h'r$\rangle$,  $\langle$s'h$\rangle$, $\langle$k'h$\rangle$, $\langle$m'h$\rangle$, $\langle$n'h$\rangle$, and $\langle$g'h$\rangle$, respectively. If the middle of the cluster is the boundary between a word and a clitic dependent on it, two apostrophes are used.\\
+
+\clearpage
+{\bf \emph{2 Grammar}}\\
+
+{\bf 2.0 Syntactic bases for a verbless language}
+
+Being a verbless language, Hotadu must get by implying most things. Most phrases in the language contain only nouns, with sparse grammatical particles and interjections to provide context, and verbs must be implied either by context or convention. Hotadu grammar is, at its core, a series of rules on how to create such implications: how to interpret and mold what is esentially just a list of nouns such that it becomes a cohesive utterance.\\
+
+Syntactically, Hotadu is simply a list of noun phrases. It does have other types of speech, but all are subordinate to nouns. There are adjectives and pronouns, but both can occur independently as their own noun phrases, meaning they act very similarly to nouns. There are two parts of speech in Hotadu that differ significantly from nouns: relationals and interjections/particles. Interjections and particles act the same way, with the only difference being that interjections generally modify the tone that a particular utterance is conveyed with, and particles tend to convey grammatical meaning. They generally appear at set positions within a noun phrase, such as at the beginning or end. The distinction between them is essentially arbitrary, and they might as well be treated as synonyms. Relationals define a relationship between two nouns, but only exist as modifications to noun phrases.\\
+
+%talk about new information
+A noun phrase on its own in Hotadu simply carries the meaning that that there exists a noun satisfying what is described in that phrase, and two noun phrases next to each other with an appropriate pause or em-dash in writing signify that two noun phrases carry the same meaning within the context of the discourse. All other implications and meanings given off by noun phrases must be done through a series of conventions and rules on how to interpret Hotadu. The most important of these is that the speaker pay attention to new information first and foremost. For example, if a speaker were to say ``a man with a hat,'' this on its own may not appear to give off much meaning. In the context of Hotadu grammar, however, since it is a standalone noun phrase, it is interpreted as an existential statement, so its meaning could equally be ``there is a man with a hat.'' Suppose, for the sake of example, that the listener already knows that there is a man, and the speaker knows the listener knows this. In this case, the fact that a man exists is not the new information, it is instead that the man has a hat, meaning the implied meaning of this phrase is ``the man has a hat.'' This pattern is highly-context dependent, meaning two identical utterances could have entirely different meanings in different contexts.\\
+
+Looking at some Hotadu phrases, it may be initially puzzling what certain words are doing in the sentence if they are not verbs. Take the following sentence:
+\begin{exe}
+\ex
+\gll m\.{e}ta sam ag\\
+man \textsc{instr} tool\\
+\trans \emph{The man uses the tool.}
+\end{exe}
+
+In the above sentence, it would appear as if the instrumental particle \emph{sam} could be easily, and perhaps more accurately, thought of as a verb. A more thorough analysis of Hotadu syntax, however, will reveal this to not be the case. Firstly, while the sentence is translated as ``the man uses the tool,'' like many translations from Hotadu, this is more of an implied meaning than an explicitly stated one. The true meaning of this sentence is not ``the man uses the tool,'' but rather ``the man with a tool,'' or ``the man who is using a tool.'' In keeping with Hotadu grammatical rules, this statement on its own means ``there is a man with a tool'' or ``there is a man using a tool.'' In the implied context this sentence is given in, however, it is expected that the fact that a man exists is not new information; the new information is instead that he is using a tool. In this way, the true meaning that the sentence is intended to give off, and the one it does give off with correct parsing, is ``the man uses the tool,'' which is the given translation. This reveals the phrase as being a noun phrase first and foremost rather than a verb or relational-centered phrase. Take the two following syntax trees:
+
+\begin{center}
+\emph{Figure I: Correct Hotadu parsing}
+\end{center}
+\Tree [.NP [.NP m\.{e}ta ] [.RP [.R sam ] [.NP ag ] ] ]\\
+
+\begin{center}
+\emph{Figure II: Incorrect Hotadu parsing}
+\end{center}
+\Tree [.*S [.NP m\.{e}ta ] [.*VP [.*V sam ] [.NP ag ] ] ]\\
+
+In truth, all independently grammatical Hotadu phrases are noun phrases. This is the only analysis that makes sense when faced with examples such as the following:
+\begin{exe}
+\ex
+\gll m\.{e}ta sam ag --- sohm\.{e}\\
+man \textsc{instr} tool \textsc{cop} big\\
+\trans \emph{The man with the tool is big.}
+\end{exe}
+
+The verb-central way of parsing the language would not make any sense, as follows:
+\begin{center}
+\emph{Figure III: Incorrect Hotadu parsing on complex noun phrase}
+\end{center}
+\Tree [.*? [.*S [.NP m\.{e}ta ] [.*VP [.*V sam ] [.NP ag ] ] ] [.NP sohm\.{e} ] ]\\
+
+While the noun-central way of parsing the language is able to account for this pattern perfectly, as follows: 
+\begin{center}
+\emph{Figure IV: Correct Hotadu parsing on complex noun phrase}
+\end{center}
+\Tree [.NP [.NP [.NP m\.{e}ta ] [.RP [.R sam ] [.NP ag ] ] ] [.NP sohm\.{e} ] ]\\
+
+It should be noted that, as displayed in the above tree, this entire phrase is itself a noun phrase. Its ``true meaning'' is ``the man with a tool that is big,'' or ``there is a man with a tool that is big,'' but through the same discourse process used to determine a more accurate context-based intended meaning used in the previous example, this can be better translated as ``the man with a tool is big'' because this is the new information; the information intended to be passed on by the phrase. Since this phrase as a whole is still a noun phrase, another noun phrase could be added to the end in another equative statement. For example, if the word ``red'' were added to the end with a pseudo-copula as described in section 2.3, the phrase would have the true meaning ``the man with a tool that is big and red,'' or ``the man with a tool that is big is red.'' This process can be repeated ad infinitum, giving a syntactic justification for considering the prosodic pause between noun phrases in an equative statement a pseudo-copula rather than a true copula, as it is not the center of a verb phrase, or any phrase for that matter. In that way, it cannot be syntactically considered a verb. Obviously, this process is highly context-dependent, and the ``most correct'' meaning of these examples will vary based on the situation they are spoken in.\\
+
+{\bf 2.1 Existential statements}
+
+In Hotadu, a single noun phrase on its own is an existential statement on that noun phrase. Essentially, stating a noun on its own implies that you are stating that noun's existance. Examples are as follows:
+\begin{exe}
+\ex 
+\gll hebbash\\
+fire\\
+\trans \emph{There is a fire.}
+\end{exe}
+
+This is the simplest grammatical pattern in Hotadu, and is used as a basis for numerous other patterns. A single noun can also function as the answer to a question inquiring about a particular noun. \\
+
+{\bf 2.2 Existential locative statements}
+
+An existential locative statement is a simple extension of the existential statement that adds a locative component. The statement gives the meaning that the particular noun exists in a particular location.
+\begin{exe}
+\ex
+\gll eku huppis rogh\.{u}\\
+here parent strong\\
+\trans \emph{There is a strong parent here.}
+\end{exe}
+
+{\bf 2.3 Equative statements}
+
+Equative statements are used where the copula would be in languages with a copula --- to equate two things to each other. In writing, an em-dash (---) between the arguments is used to signify this pattern, and in speech it is signified by a short pause between them. This is glossed as a copula, but it is not a true one because it is not a verb, only a short pause in speech, or a piece of punctuation in writing.
+\begin{exe}
+\ex
+\gll khota d\.{u} --- khota\\
+language thing \textsc{cop} language\\
+\trans \emph{Hotadu is a language.}
+
+\ex
+\gll hnoy\.{e} --- j\.{o}ro-'gi hupis\\
+failure \textsc{cop} success-\textsc{3.gen} parent\\
+\trans \emph{Failure is the mother of success.}
+\end{exe}
+
+{\bf 2.4 Changes of state and \emph{kos}}
+
+To descibe a change in state of a particular situation, the word \emph{kos} (``then'') is used. When used in the context of a larger story, it has the same meaning as it does in most languages, but used without such context, it implies that the situation being described only recently came to be, and marks a change from the previous situation. This pattern is associated with the past, but can be used to describe current and future situations as well. Compare the first two examples to the second two:
+\begin{exe}
+\ex
+\gll kora --- majjo\\
+woman \textsc{cop} clever\\
+\trans \emph{The woman is smart.}
+
+\ex
+\gll s\'{i}h ba hrasha-'ssho\\
+food inside mouth-\textsc{1.gen}\\
+\trans \emph{The food is in my mouth.}
+
+\ex
+\gll kos kora --- majjo\\
+then woman \textsc{cop} clever\\
+\trans \emph{The woman wisened up.}
+
+\ex
+\gll kos s\'{i}h ba hrasha-'ssho\\
+then food inside mouth-\textsc{1.gen}\\
+\trans \emph{I ate the food.}
+\end{exe}
+
+{\bf 2.5 Yes/no questions and \emph{ne}}
+
+To ask whether a certain thing is the case, simply end the phrase with the yes/no particle \emph{ne}, as follows:
+\begin{exe}
+\ex
+\gll khota d\.{u} --- khota ne\\
+language thing \textsc{cop} language \textsc{y/n}\\
+\trans \emph{Is Hotadu a language?}
+
+\ex 
+\gll hebbash ne\\
+fire \textsc{y/n}\\
+\trans \emph{Is there a fire?}
+\end{exe}
+
+{\bf 2.6 Negation, confusion, and \emph{g\.{a}}}
+
+There is no set way to negate that is standard in all situations, but different functions of the language can together play the role of negating a verb. In response to a yes or no question, the way to respond in the negative is to use \emph{g\.{a}}, the confusion particle. This particle, when placed at the end of a phrase, expresses a speaker's confusion over that phrase. This can be used to negate a question in the dialogue that follows:
+\begin{exe}
+\ex 
+\gll m\.{e}ta r\.{e} gab\.{e}-'ju ne\\
+man in.front eye-\textsc{2.gen} \textsc{y/n}\\
+\trans \emph{Do you see the man?}
+
+\ex
+\gll m\.{e}ta g\.{a}\\
+man \textsc{confusion}\\
+\trans \emph{The man? (meaning: no)}
+\end{exe}
+
+This is not, however, the only use of this particle. It can also be used in the context of a number or amount to express disbelief over that number or amount. In the dialogue that follows, the second speaker implies with their response that the score the first speaker got on the test is not an ordinary score; it is either much heigher or lower than what they would expect.
+\begin{exe}
+\ex 
+\gll eho-'ssho --- ut ihm huyye\\
+score-\textsc{1.gen} \textsc{cop} nine $10^1$ eight\\
+\trans \emph{I got a 98 (on the test).}
+
+\ex
+\gll ut ihm huyye g\.{a}\\
+nine $10^1$ eight \textsc{confusion}\\
+\trans \emph{98?!}
+\end{exe}
+
+{\bf 2.7 Basic relative time}
+
+Expressing time can be complicated in a language that has no explicit mechanism for time expression. The simplest way would be to treat time as syntactically equivalent to place: \emph{i.e.}, to use a locative existential statement with the time as the location, as follows:
+\begin{exe}
+\ex
+\gll eku-'so saba sohm\.{e}\\
+here-time conflict big\\
+\trans \emph{There is a big conflict now.}
+
+\ex 
+\gll h\.{a} eku m\.{e}ta\\
+past here man\\
+\trans \emph{There was a man here.}
+\end{exe}
+
+This pattern, however, is somewhat clunky an unnatural-sounding, akin to saying ``there was a man here in the past'' in English, rather than simply ``there was a man here,'' and would typically only be used if the speaker specifically wanted to point out the time in the phrase, rather than just being an incidental detail. A second option for marking the past in a less heavy-handed way would be the use of \emph{kos} (``then''), which has strong associations with changes of state, and implies the past unless it has been previously established that a story is taking place in the present or future.
+\begin{exe}
+\ex
+\gll kos h\.{o}h\.{o} ba ekar\\
+then dog in house\\
+\trans \emph{The dog entered the house.}
+\end{exe}
+
+The idiomatic statement ``further down the path'' (\emph{wah r\.{e} hnag\.{a}}) can be used to express the future in a more natural-sounding way. The first person pronoun \emph{wah} can be raplaced with second or third person pronouns or specific nouns if the statement concerns something happening to someone other than the speaker.
+\begin{exe}
+\ex 
+\gll wah r\.{e} hnag\.{a} j\.{o}ro b\'{i}\\
+1 in.front path success \textsc{celeb}\\
+\trans \emph{I will have success.}
+\end{exe}
+
+Once a timeframe is established in a story, future clauses are assumed to take place within that timeframe unless otherwise stated.\\
+
+{\bf 2.8 Possession}
+
+The possessed form of a noun phrase is given by the noun phrase followed by one of three enclitics denoting possession: \emph{'ssho} in the first person (becomes \emph{'sho} if the preceding word ends in a consonant), \emph{'ju} in the second, and \emph{'gi} in the third. To specify the noun phrase that is the possessor, follow the possessed-enclitic pair with that noun phrase.
+\begin{exe}
+\ex
+\gll m\.{e}ta ba ekar-'sho\\
+man in house-\textsc{1.gen}\\
+\trans \emph{The man is in my house.}
+\end{exe}
+
+{\bf 2.9 Causation and \emph{kos \ldots kos \ldots}}
+
+When wanting to say that a particular change of state caused another, simply place the two next to each other. The first change of state statement will be interpreted as the cause, and the second as the effect.
+\begin{exe}
+\ex
+\gll kos wah --- rissi, kos ahm\.{a}-'gi --- sohm\.{e}\\
+then 1 \textsc{cop} loud, then ear-\textsc{3.gen} \textsc{cop} big\\
+\trans \emph{I talked to him (lit: I got loud and his ears got big.)}
+\end{exe}
+
+{\bf 2.10 Narrating dialogue}
+
+The primary vehicles used for narrating dialogue are the genitive enclitics described in section 2.8. When narrating that a particular person said something, the idiom \emph{shehmi'gi} (``their words'') is used, which can be extended to other persons.
+\begin{exe}
+\ex
+\gll shehmi-'gi ekko kos wah --- sohm\.{e} kos ge \'{i}k magi-'gi\\
+word-\textsc{3.gen} wind then 1 \textsc{cop} big then 3 away coat-\textsc{3.gen}\\
+\trans \emph{The wind said: I will blow and he will take his coat off.}
+\end{exe}
+
+{\bf 2.11 Numbers}
+
+Hotadu uses base 10. Cry about it. A number is read out by saying the value of a digit followed by the name of that digit (e.g. hundred, thousand, ten). The following tables contain digits and place names, respectively.
+\begin{center}
+\emph{Table III: Digits 0-9\emph{\footnote{Note that in gloss in this grammar the digit values 1, 2, and 3 are glossed as ``one'', ``two'', and ``three'' in order to avoid confusion with the first, second, and third person markers that are glossed as ``1'', ``2'', and ``3'', respectively, but all other digits are glossed in Arabic numerals.}}}\\
+\begin{tabularx}{0.5\textwidth}{ |X|X| }
+\hline
+{\bf Name} & \bf{Value} \\ \hline
+ awwe & 0 \\ \hline
+ ot & 1 \\ \hline
+ isot & 2 \\ \hline
+ ekki & 3 \\ \hline
+ meh & 4 \\ \hline
+ \'{i}gh & 5 \\ \hline
+ khar & 6 \\ \hline
+ geh & 7 \\ \hline
+ huyye & 8 \\ \hline
+ ut & 9 \\ \hline
+\end{tabularx}
+\end{center}
+
+
+\begin{center}
+\emph{Table IV: Digit places}\\
+\begin{tabularx}{0.5\textwidth}{ |X|X| }
+\hline
+{\bf Name} & \bf{Value} \\ \hline
+ het & $10^{-5}$ \\ \hline
+ beku & $10^{-4}$ \\ \hline
+ iggo & $10^{-3}$ \\ \hline
+ hnu & $10^{-2}$ \\ \hline
+ sot & $10^{-1}$ \\ \hline
+ ot & $10^{0}$ \footnote{This need not be used if the ones digit comes at the end of a number, but it must be used otherwise.} \\ \hline
+ ihm & $10^1$ \\ \hline
+ s\.{o}r & $10^2$ \\ \hline
+ mam & $10^3$ \\ \hline
+ ipo & $10^4$ \\ \hline
+ t\.{u}r & $10^5$ \\ \hline
+\end{tabularx}
+\end{center}
+
+Because of the versatility of this system, numbers do not necessarily have to be said in their traditional order. While it is most common to say digits from largest to smallest, alternative orderings of these digit-place pairs are strictly grammatical, if somewhat confusing. They do not have much utility, but may be used e.g. to build suspense on the reveal of the magnitude of a large number, by deliberately starting on the smallest digit and working up. Another potential use could be correcting a mistake another speaker has made. For example, if one speaker claims that a particular value is equal to 425, but in reality it is equal to 435, another speaker correcting this original speaker could begin with the tens place and then follow with the hundreds and ones places to bring deliberate attention to the digit the speaker made the mistake on, as follows:
+
+\begin{exe}
+\ex
+\gll meh s\.{o}r ekki ihm \'{i}gh\\
+4 $10^2$ three $10^1$ 5\\
+\trans \emph{Four hundred thirty-five.\emph{\footnote{This is the typical, unemphasized way of phrasing this number.}}}
+
+\ex
+\gll ekki ihm meh s\.{o}r \'{i}gh\\
+three $10^1$ 4 $10^2$ 5\\
+\trans \emph{Four hundred thirty-five.\emph{\footnote{This brings particular attention to the tens place.}}}
+\end{exe}
+
+After a number is said, \emph{kup} can be used to mark it as negative, and \emph{tam} as imaginary. Complex numbers are always stated imaginary part first, with \emph{tam} acting as delimeter between imaginary and real parts. Each section of a complex number can individually receive \emph{kup}, and, if an imaginary number is negative, \emph{kup} is always said before \emph{tam}.\\
+
+Ordinal numbers are stated by following a cardinal number with the modifier \emph{juh}, as follows.
+
+\begin{exe}
+\ex
+\gll meh s\.{o}r ekki ihm \'{i}gh juh\\
+4 $10^2$ three $10^1$ 5 \textsc{opt}\\
+\trans \emph{Four hundred and thirty-fifth.}
+\end{exe}
+
+{\bf 2.12 The optative}
+
+The optative particle \emph{ghu} is used at the end of a sentence to denote that a speaker wishes a particular thing were the case. It also implies that that situation is not the case currently, and as a result implies a change in state. Using \emph{ghu} with \emph{kos} would be considered redundant as a result. This would be unnatural-sounding and ungrammatical, as is the second example given.
+\begin{exe}
+\ex
+\gll massi ghu\\
+fortune \textsc{opt}\\
+\trans \emph{Good fortune to you (greeting).}
+
+\ex[*] {kos massi ghu}
+
+\ex
+\gll ge --- \.{e}sa ghu\\
+3 \textsc{cop} happy \textsc{opt}\\
+\trans \emph{I wish he were happy.}
+\end{exe}
+
+This can be combined with the regrettable event particle \emph{o} to form a past optative for when speaker wishes something would have happened, implying it did not, as follows:
+\begin{exe}
+\ex
+\gll ge --- \.{e}sa ghu'o\\
+3 \textsc{cop} happy \textsc{opt.regret}\\
+\trans \emph{I wish he had been happy.}
+\end{exe}
+
+{\bf 2.13 The vocative}
+
+The vocative particle \emph{o} is used sentence-initially to denote the vocative, used when directing speech at a particular person. It is differentiated by the regrettable event particle \emph{o} by its sentence position, as the other particle appears sentence-finally.
+\begin{exe}
+\ex
+\gll shehmi-'ju a o mika se\\
+word-2.\textsc{gen} \textsc{inq} \textsc{voc} weak.person \textsc{mock}\\
+\trans \emph{What the fuck did you just fucking say about me, you little bitch?}
+\end{exe}
+
+{\bf 2.14 The regrettable event particle \emph{o}}
+
+The regrettable event particle \emph{o} is used sentence-finally to denote that a speaker feels that the situation they describe is regrettable in some way. It can be used to lend a respectful and empathetic tone when relaying bad news to someone. When combined with the mocking particle \emph{se}, it can be used to denote that the situation described by the speaker is, from the point of view of the speaker, overplayed in terms of how unfortunate it is, or it could denote that a speaker feels a certain schadenfraude in the unfortunate event occuring.
+\begin{exe}
+\ex
+\gll hnoy\.{e} o\\
+failure \textsc{regret}\\
+\trans \emph{I have failed.\emph{\footnote{Depending on the context, this could denote anyone failing.}}}
+
+\ex
+\gll ge --- s\'{i}m o\\
+3 \textsc{cop} death \textsc{regret}\\
+\trans \emph{They have died.}
+
+\ex
+\gll hnoy\.{e} o se\\
+failure \textsc{regret} \textsc{mock}\\
+\trans \emph{You failed \emph{(with a connotation either that the person in question should get over it or that the speaker is glad the person failed).\footnote{Again, this could refer to anyone given the context.}}}
+\end{exe}
+
+{\bf 2.15 The mocking particle \emph{se}}
+
+This particle explicitly declares that a statement is meant as an insult. The particle will always be interpreted as rude, never as friendly banter, and should only be used if this is the intention.
+\begin{exe}
+\ex
+\gll shehmi-'ju a o mika se\\
+word-2.\textsc{gen} \textsc{inq} \textsc{voc} weak.person \textsc{mock}\\
+\trans \emph{What the fuck did you just fucking say about me, you little bitch?}
+\end{exe}
+
+{\bf 2.16 Body part idioms}
+
+One of the ways certain verbs' meanings can be expressed in Hotadu is through the use of idioms using human body parts at times combined with locative statements, implying some action associated with the body part and location is being done. A non-comprehensive list of these can be found below, with the demonstrative noun \emph{maj} (``human'') being used for the subject of the implied verb if necessary and first person genatives being used in reference to the body parts.
+
+\begin{center}
+\emph{Table V: Body part idioms}
+\begin{tabularx}{\textwidth}{ |X|X|X| }
+\hline
+{\bf Hotadu} & \bf{English} & \bf{Meaning}\\ \hline
+Kos, ahm\.{a}'ssho --- sohm\.{e}. & \emph{My ears got big.}  & I listened. \\ \hline
+Maj r\.{e} gab\.{e}'ssho. & \emph{The person is in front of my eyes.} & I see the person. \\ \hline
+Kos, maj ba hrasha'ssho. & \emph{The person entered my mouth.} & I ate the person. \\ \hline
+Maj ba hej\.{o}'ssho. & \emph{The person is in my head.} & I think about the person. \\ \hline
+Maj ba hej\.{o}'ssho. & \emph{The person is in my head.} & I know the person. \\ \hline
+Kos, hrasha'ssho --- m\.{a}sa. & \emph{My mouth became a hole.} & I spoke. \\ \hline
+Hrasha'ssho --- sh\.{u}r. & \emph{My mouth is tight.} & I am not speaking. \\ \hline
+Gab\.{e}'ssho sho maj. & \emph{My eyes are towards the person.} & I am staring at the person\footnote{This is differentiated from \emph{maj r\.{e} gab\.{e}'ssho} in that the idiom implies a more agentive role on the speaker's part, which is what gives this the meaning of actively staring rather than more passively seeing. ``Looking'' may also be an acceptable translation, but it is mainly used to emphasize that the looker is taking an active role in doing so, making ``staring'' the most accurate translation.}. \\ \hline
+\end{tabularx}
+\end{center}
+\vspace{3mm}
+
+{\bf 2.17 The inquisitive \emph{a}}
+
+The inquistive particle \emph{a} is used sentence-finally to denote that a speaker wishes for the person they are conversing with to give information on or elaborate on a particular topic.
+\begin{exe}
+\ex
+\gll shehmi-'ju a\\
+word-2.\textsc{gen} \textsc{inq}\\
+\trans \emph{What did you just say?}
+
+\ex
+\gll d\.{u} sa rogh\.{u} heb a\\
+thing two strong one \textsc{inq}\\
+\trans \emph{Of the two, which is the strongest one?}
+\end{exe}
+
+{\bf 2.18 Expectation, \emph{hro}, and \emph{mas}}
+
+A certain fact being better or worse than what the speaker believes would be expected can be denoted by the end-of-sentence particles \emph{hro} and \emph{mas}, respectively. \emph{Hro} denotes that the fact described by the speaker is worse than the expectations of the speaker or of people in general (depending on context), such as a low score, poor performance, or a disappointing event. \emph{Mas} denotes that a speaker believes that what they are describing is better than expectations. It is worth noting that these do not denote differences in number, as \emph{mas} could be used to describe something unexpectedly low in number (if that thing being low in number is good), and \emph{hro} can be used to describe something unexpectedly high in number (if that thing being high in number is bad). \emph{Hro} and \emph{mas} denote sentiments, not semantics.
+\begin{exe}
+\ex 
+\gll eho-'ssho --- ut ihm huyye mas\\
+score-\textsc{1.gen} \textsc{cop} nine $10^1$ eight \textsc{he}\\
+\trans \emph{I got a 98!}
+
+\ex
+\gll m\.{e} --- z\'{i}girra hro se\\
+2 \textsc{cop} target \textsc{le} \textsc{mock}\\
+\trans \emph{You are just another target.}
+\end{exe}
+
+{\bf 2.19 The ambiguity-clearing particle \emph{te}}
+
+The ambiguity-clearing particle \emph{te} is an always-optional particle that can help group larger noun phrases into smaller units for easier parsing on the part of the speaker. The use of this particle and what counts as the most logical grouping within a large noun phrase is at the discretion of the speaker. It is glossed as ``of,'' as it has certain similarities to this word, but it is in no way identical to it, as apparent in the second given example.
+\begin{exe}
+\ex
+\gll mej\.{a}k te hrasha s\.{a}r\\
+bird of mouth many\\
+\trans \emph{Bird of many voices.}
+
+\ex
+\gll mej\.{a}k hrasha te s\.{a}r\\
+bird mouth of many\\
+\trans \emph{Many songbirds.}
+
+\ex
+\gll suhu s\'{i}m hriko te Am\.{e}rika\\
+group death government of America\\
+\trans \emph{The American military (\emph{lit: government death group of America}).}
+
+\ex
+\gll suhu te s\'{i}m hriko Am\.{e}rika\\
+group of death government America\\
+\trans \emph{Group of the death of the American government\footnote{\emph{This doesn't mean much, but grammatically there is nothing wrong with it.}}.}
+\end{exe}
+
+{\bf 2.20 Reduplication}
+
+Reduplication has the primary purpose of marking grammatical number in Hotadu. Reduplication is never necessary, but it can be used to mark something as plural. This is primarily used for emphasis, and is usually not used after plurality has already been established (either through a previous usage of reduplication or some other more explicit marker of plurality). For instance, the word \emph{s\.{a}r} (``numerous'') is almost never used in conjunction with reduplication, as it alone establishes plurality. If a speaker wants to particularly emphasize the point that there were multiple of this object, however, this can occur, as well as multiple instances of reduplication or some other form of plurality marking in short succession.
+\begin{exe}
+\ex
+\gll kos maj-maj ba ekar'sho\\
+then person-person in house-\textsc{1.gen}\\
+\trans \emph{Many people entered my house.}
+
+\ex
+\gll ekki s\.{o}r s\'{i}m-s\'{i}m eso wah mas\\
+three $10^2$ death-death because 1 \textsc{he}\\
+\trans \emph{I have over 300 kills\emph{\footnote{Here, the use of reduplication is unnecessary because it is implied by the given number. The speaker, however, wishes to express that this is a large number, as further evidenced by the sentence-final use of the higher-than-expectations particle \emph{mas}, with reduplication being used to further emphasize this.}}.}
+\end{exe}
+
+{\bf 2.21 Spatial deixis}
+
+Spatial deixis can be used to denote an object as being ubicated close or far from a speaker, listener, or third party. This is primarily achieved through the use of a demonstrative, which can take the following forms:
+
+\begin{center}
+\emph{Table VI: Demonstratives}
+\begin{tabularx}{\textwidth}{ |X|X|X|X| }
+\hline
+ & \bf{Speaker} & \bf{Listener} & \bf{Third party}\\ \hline
+ Close & h\.{u} & n\.{u} & t\.{u} \\ \hline
+ Far & h\.{e} & n\.{e} & t\.{e} \\ \hline
+\end{tabularx}
+\end{center}
+
+This is used after the noun phrase it modifies, as follows:
+\begin{exe}
+\ex
+\gll mej\.{a}k h-\.{u} --- nahe\\
+bird \textsc{dem.1}-\textsc{close} \textsc{cop} beauty\\
+\trans \emph{This bird by me is pretty.}
+
+\ex
+\gll mej\.{a}k n-\.{u} --- nahe\\
+bird \textsc{dem.2}-\textsc{close} \textsc{cop} beauty\\
+\trans \emph{That bird by you is pretty.}
+
+\ex
+\gll mej\.{a}k t-\.{e} --- nahe\\
+bird \textsc{dem.3}-\textsc{far} \textsc{cop} beauty\\
+\trans \emph{That bird far from them is pretty.}
+\end{exe}
+
+{\bf 2.22 Directionality}
+
+Directionality can be given as a modifier to a noun phrase when a speaker wishes to convey that a particular object is faced in a particular direction, be that a general direction or that of another object. This is primarily achieved through the directional relational \emph{sho}.
+
+\begin{exe}
+\ex
+\gll wah ba z\'{i}girra s\.{a}r mas z\'{i}girra sho \emph{al.quaeda}\\
+1 in arrow many \textsc{he} arrow towards Al.Quaeda\\
+\trans \emph{I've been involved in numerous raids on Al-Quaeda}
+
+\ex
+\gll gab\.{e}-'ju sho ag-'gi\\
+eye-\textsc{2.gen} towards tool-\textsc{3.gen}\\
+\trans \emph{You are staring at his tools.}
+\end{exe}
+
+{\bf 2.23 Basic math}
+
+Basic mathematical expressions are, like other phrases in Hotadu, expressed as noun phrases. They use the relational \emph{m\.{o}} (``with'') to give their intended meanings. The basic operations are \emph{kapa} (``addition''), \emph{getto} (``subtraction''), \emph{eppa} (``multiplication''), and \emph{suk} (``division''). The two arguments have a short stop between them in speech, and are seperated by the comma in writing. They are used as follows:
+
+\begin{exe}
+\ex
+\gll kapa m\.{o} ot ekki --- meh\\
+addition with one three \textsc{cop} 4\\
+\trans \emph{$1 + 3 = 4$}
+
+\ex
+\gll eppa m\.{o} ot ekki\\
+multiplication with one three\\
+\trans \emph{$1 \cdot 3$}
+\end{exe}
+
+{\bf 2.24 The possible state particle \emph{bak}}
+
+The particle \emph{bak} is used to mark that a certain noun phrase could or could not exist, which, in the context of the discourse, often takes the meaning that a particular described or implied state could or could not exist. Its closest equivalent in English would be the phrase ``whether or not.'' It is used as follows:
+
+\begin{exe}
+\ex 
+\gll kos wah-wah sam ay kos hir nehha sohm\.{e} ba hej\.{o}-'ssho yisa wah sam khota te hmaha zukk\.{o} bak\\
+then 1-\textsc{redup} \textsc{instr} communication then maybe information universe in head-\textsc{1.gen} but 1 \textsc{instr} language of fruit safe \textsc{possible}\\
+\trans \emph{We try to communicate the secrets of the universe with a language meant to tell whether it's safe to eat fruit.\emph{\footnote{Adapted Terry Pratchett quote.}}}
+\end{exe}
+
+{\bf 2.25 Pro-drop and noun dropping}
+
+Noun phrases can be dropped or implied in relational phrases when they are established in the discourse as having appeared in a previous relational phrase. 
+
+\begin{exe}
+\ex
+\gll ge-ge m\.{o} happ\.{o} h\.{e}k gab m\.{o} harro h\.{e}k s\.{u}had\\
+3-\textsc{redup} with brick instead.of rock with asphalt instead.of mortar\\
+\trans \emph{They had brick for stone, and they had asphalt for mortar.}
+\end{exe}
+
+In the above example, \emph{gege} is established as the first noun phrase of the relational \emph{m\.{o}}, and does not need to be restated for the second use of \emph{m\.{o}}. In writing, there would be a comma before this second \emph{m\.{o}} to differentiate what is intended to be said, that this is a second replacemet that the first noun phrase \emph{gege} has made, from an alternate interpretation based on the words alone, that instead the entire first part up until and including \emph{gab} is one noun phrase that is the first in a larger relational phrase. In speech, this seperation would instead be a short pause before the second \emph{m\.{o}}.\\
+
+{\bf 2.26 Groupings}
+
+A particular noun phrase can be established as a group topic if used before a comma in writing or a short pause\footnote{Differentiated by the psuedo-copula pause in that it is slightly shorter.} in speech. This can be best seen through example.
+
+\begin{exe}
+\ex
+\gll ekko m\.{o} hebbash sohm\.{e}, saba\\
+wind with fire big conflict\\
+\trans \emph{There was a conflict between the Wind and the Sun.}
+
+\ex
+\gll suhu-'ssho, eho-'ssho --- yar\'{i} bag\\
+class-\textsc{1.gen} score-\textsc{1.gen} \textsc{cop} high most\\
+\trans \emph{I have the highest grade in my class.}
+\end{exe}
+
+{\bf 2.27 Because and object creation}
+
+The word \emph{eso}, ``because,'' can be used to imply a causative and specify who or what was the catalyst for the creation of a particular object or situation.
+
+\begin{exe}
+\ex
+\gll ekki s\.{o}r s\'{i}m-s\'{i}m eso wah mas\\
+three $10^2$ death-death because 1 \textsc{he}\\
+\trans \emph{I have over 300 confirmed kills.}
+
+\ex
+\gll khota khota-'gi h\.{e}ro --- s\.{a}r eso mahot\\
+language language-\textsc{3.gen} earth \textsc{cop} because god\\
+\trans \emph{God created the many languages of the Earth.}
+\end{exe}
+
+{\bf 2.28 Personal pronouns}
+
+In Hotadu, personal pronouns have essentially the same syntactic role as nouns, and only differ on semantics. The following are the personal pronouns of Hotadu:
+
+\begin{center}
+\emph{Table VI: Personal pronouns}
+\begin{tabularx}{\textwidth}{ |X|X|X| }
+\hline
+& \bf{Singular} & \bf{Plural}\footnote{Much like nouns, the plural is optional for pronouns.}\\ \hline
+1st person & wah & wahwah \\ \hline
+2nd person & m\.{e} & m\.{e}m\.{e} \\ \hline
+3rd person & ge & gege \\ \hline
+\end{tabularx}
+\end{center}
+\vspace{3mm}
+
+{\bf 2.29 The reflexive \emph{makke}}
+
+The word \emph{makke} can be used as a reflexive in Hotadu. Syntactically, it behaves the same as other nouns, but has a particular meaning that sets it apart from other words. When used on a group of people, \emph{makke} means ``each other,'' to give the meaning of the individual selves of each person within a group, the word \emph{b\.{e}wa} is instead used. For glossing purposes, \emph{makke} is glossed as \textsc{refl} and \emph{b\.{e}wa} is glossed as \textsc{ind.refl}.
+
+\begin{exe}
+\ex
+\gll shehmi-'gi ge-ge sho makke happ\.{o} h-\.{u} eso wah-wah ghu\\
+word-\textsc{3.gen} 3-\textsc{redup} towards \textsc{refl} brick \textsc{close}-1 because 1-\textsc{redup} \textsc{opt}\\
+\trans \emph{Then they said to one another, ``Come, let us make bricks and bake them thoroughly.''}
+
+\ex
+\gll shehmi-'gi ge-ge sho h\.{e}wa happ\.{o} h-\.{u} eso wah-wah ghu\\
+word-\textsc{3.gen} 3-\textsc{redup} towards \textsc{ind.refl} brick \textsc{close}-1 because 1-\textsc{redup} \textsc{opt}\\
+\trans \emph{Then they said to themselves, ``Come, let us make bricks and bake them thoroughly.''}
+\end{exe}
+
+{\bf 2.30 Comparison statements}
+
+Comparisons can be made between two items with the sentence structure \emph{\ldots\textsubscript{1} mat \ldots\textsubscript{2} te \ldots\textsubscript{3} yar\'{i}}. The item that displays more of a particular trait goes in the first position, the item that shows less in the second, and the trait in question in the third. The literal translation of this could be ``\ldots\textsubscript{1} is more \ldots\textsubscript{3} than \ldots\textsubscript{2}.''
+
+\begin{exe}
+\ex
+\gll h\.{u}mma mat d\'{i}sh te ekegh yar\'{i}\\
+there as here of bad most\\
+\trans \emph{It is worse there than here.}
+\end{exe}
+
+If the speaker wishes to state that two items have the same amount of a particular trait, they may do so by simply equating the two, as follows:
+
+\begin{exe}
+\ex
+\gll h\.{u}mma ekegh --- d\'{i}sh ekegh\\
+there bad \textsc{cop} here bad\\
+\trans \emph{It is as bad there as it is here.}
+\end{exe}
+
+Additionally, equality can be expressed by removing \emph{yar\'{i}} from the original sentence structure.
+
+\begin{exe}
+\ex
+\gll nimdok mat wah-wah te m\.{o} sugh\.{e} bahe\\
+Nimdok as 1-\textsc{redup} of with certainty none\\
+\trans \emph{Nimdok was as uncertain as we.}
+\end{exe}
+
+{\bf 2.31 Days of the week}
+
+Days of the week are expressed by following the word \emph{tippe}, ``day,'' with the number day it is, beginning with one on Monday and seven on Sunday, followed by the ordinal number marker \emph{juh}. In any formal or semi-formal writing, the number is never replaced with its digit representation, instead being fully written out. In order to distinguish from merely expressing an ordinal day in writing, the number and ordinal marker are written with an apostrophe instead of a space between them, as follows:
+
+\begin{exe}
+\ex
+\gll tippe meh-'juh\\
+day 4-\textsc{ord}\\
+\trans \emph{Thursday}
+
+\ex
+\gll tippe ot-'juh\\
+day one-\textsc{ord}\\
+\trans \emph{Monday}
+
+\ex
+\gll tippe \'{i}gh-'juh\\
+day 5-\textsc{ord}\\
+\trans \emph{Friday}
+\end{exe}
+
+{\bf 2.32 The politeness marker \emph{nu}}
+
+Politeness can be explicitly marked on a phrase by adding \emph{nu}, the politeness marker. When used on a noun phrase, this would typically mark a request for some object, however, when used after the optative marker \emph{ghu}, it implies that whatever the optative marker modifies is a request\footnote{A request can still be made with the optative marker and no politeness marker, and in fact with no optative marker at all, depending on context and other factors, but the most explicit way to mark a request that someone do something is an optative marker followed by a politeness marker.} and adds politeness to said request.
+
+\begin{exe}
+\ex
+\gll s\'{i}h nu\\
+food \textsc{pol}\\
+\trans \emph{(Pass the) food, please.}
+
+\ex
+\gll s\'{i}h ghu nu\\
+food \textsc{opt} \textsc{pol}\\
+\trans \emph{Please make food.}
+\end{exe}
+
+\clearpage
+{\bf \emph{3 Lexicon}}\\
+
+{\bf 3.1 Nouns, adjectives, and pronouns}
+\begin{multicols}{3}
+\noindent
+\emph{abbe}: n., ``prison, dungeon.''\\
+\emph{ag}: n., ``tool.''\\
+\emph{ag s\'{i}m}: n., ``weapon.'' From \emph{ag}, ``tool,'' and \emph{s\'{i}m}, ``death.''\\
+\emph{ah\.{a}l}: n., ``fear, fearful, afraid.''\\
+\emph{ahm\.{a}}: n., ``ear.''\\
+\emph{aho}: n., ``good, competent.''\\
+\emph{Am\.{e}rika}: prop. n., ``America, the United States.'' From the English \emph{America}.\\
+\emph{as\'{i}}: dem., ``In this/that way, like this/that.''\\
+\emph{ay}: n., ``communication, sharing.''\\
+\emph{bab}: n., ``collection, graph (mathematics).''\\
+\emph{babay}: n., ``network, social network.'' From \emph{bab}, ``collection,'' and \emph{ay}, ``communication.''\\
+\emph{babhay\.{u}}: n., ``city, town.'' From \emph{bab}, ``collection,'' and \emph{hay\.{u}}, ``building.''\\
+\emph{babshehmi}: n., ``dictionary, lexicon.''\\
+\emph{bab ag s\'{i}m}: n., ``arsenal.'' From \emph{bab}, ``collection,'' and \emph{ag s\'{i}m}, ``weapon.''\\
+\emph{bag}: n., ``most.''\\
+\emph{bahe}: n., ``none, nothing.''\\
+\emph{b\.{a}p}: n., ``left hand direction.''\\
+\emph{benso}: n., ``pig, boar.''\\
+\emph{ber}: n., ``bone.''\\
+\emph{ber hej\.{o}}: n., ``skull, cranium.'' From \emph{ber}, ``bone,'' and \emph{hej\.{o}}, ``head.''\\
+\emph{berr\.{a}}: n., ``hat.''\\
+\emph{berr\.{a}sohm\.{e}}: n., ``sky.'' From \emph{berr\.{a}}, ``hat,'' and \emph{sohm\.{e}}, ``big.''\\
+\emph{b\.{e}wa}: n., ``the individual reflexive.''\\
+\emph{bis}: n., ``moral, good, ethical, pure.''\\
+\emph{b\.{o}gi}: n., ``cut, incision.''\\
+\emph{daro}: n., ``place, location.''\\
+\emph{dehni}: n., ``year.''\\
+\emph{dena}: n., ``return, turn-around, revenge, reciprocation.''\\
+\emph{d\.{i}sh}: n., ``here.''\\
+\emph{d\.{u}}: n., ``thing.''\\
+\emph{ebe}: n., ``kid, child.''\\
+\emph{eho}: n., ``score, grade.''\\
+\emph{ekar}: n., ``house, building, room.''\\
+\emph{ekegh}: n., ``poor, bad, depraved, cruel.''\\
+\emph{ekko}: n., ``wind.''\\
+\emph{ekos}: n., ``part, element, subdivision, component.''\\
+\emph{erepanta}: n., ``elephant,'' from English \emph{elephant}, ``elephant.''\\
+\emph{eppa}: n., ``multiplication.''\\
+\emph{esir}: n., ``all.''\\
+\emph{etar}: n., ``foreign, alien, uncommon.''\\
+\emph{\.{e}m}: n., ``flat, level.''\\
+\emph{\.{e}mguhahu}: n., ``valley.'' From \emph{\.{e}m}, ``flat,'' \emph{guha}, ``low,'' and \emph{hu}, ``land.''\\
+\emph{\.{e}mhu}: n., ``flatlands, plains.'' From \emph{\.{e}m}, ``flat,'' and \emph{hu}, ``land.''\\
+\emph{\.{e}sa}: n., ``happy, content thing.''\\
+\emph{\.{e}ssi}: n., ``early.''\\
+\emph{gab}: n., ``rock, stone.''\\
+\emph{gab\.{e}}: n., ``eye.''\\
+\emph{gabhn\.{u}r}: n., ``ice.'' From \emph{gab}, ``rock, stone,'' and \emph{hn\.{u}r}, ``cold.''\\
+\emph{gahmu}: n., ``shadow.''\\
+\emph{gareg}: n., ``metal, iron.''\\
+\emph{gar\'{i}s}: n., ``vomit.''\\
+\emph{g\.{a}pe}: n., ``importance, important, crucial, critical, utility, productive.''\\
+\emph{ge}:  prn., 3\textsuperscript{rd} noun.\\
+\emph{gega}: n., ``time, occasion.''\\
+\emph{gereg}: n., ``most recent, last, latter.''\\
+\emph{getto}: n., ``subtraction.''\\
+\emph{g\.{e}g}: prop. n., ``North.''\\
+\emph{gish}: n., ``peach, pink color.''\\
+\emph{goras}: n., ``can, jar, metal can.''\\
+\emph{goriya}: n., ``gorilla.'' From Spanish \emph{gorilla}, ``gorilla.''\\
+\emph{guha}: n., ``low, small positive number.''\\
+\emph{gusano}: n., ``worm.'' From Spanish \emph{gusano}, ``worm.''\\
+\emph{g\.{u}tan}: n., ``goal, objective.''\\
+\emph{haleluya}: excl., ``Hallelujah.'' From Latin \emph{Hallelujah}, ``Hallelujah.''\\
+\emph{hamme}: n., ``reflex.''\\
+\emph{happ\.{o}}: n., ``brick.''\\
+\emph{har}: n., ``barrier, roadblock, wall.''\\
+\emph{harabbe}: n., ``prison bars, prison walls.'' From \emph{har}, ``barrier,'' and \emph{abbe}, ``prison.''\\
+\emph{harro}: n., ``asphalt.''\\
+\emph{haw}: n., ``waste, refuse.''\\
+\emph{hawmik}: n., ``excrement, poop.'' From \emph{haw}, ``waste,'' and \emph{mik}, ``anus.''\\
+\emph{hawsig}: n., ``urine, pee.'' From \emph{haw}, ``waste,'' and \emph{sig}, ``water.''\\
+\emph{hay\.{u}}: n., ``tower, building.''\\
+\emph{hebbash}: n., ``fire, flame.''\\
+\emph{heb}: n., ``single.''\\
+\emph{hej\.{o}}: n., ``head, skull, brain.''\\
+\emph{hep}: n., ``other, subsequent.''\\
+\emph{heppa}: n., ``conversation, speech, monologue, text.''\\
+\emph{h\.{e}rat}: n., ``action, deed.''\\
+\emph{h\.{e}ro}: n., ``home.''\\
+\emph{H\.{e}ro}: prop. n., ``the Earth.'' From \emph{h\.{e}ro}, ``home.''\\
+\emph{hisa}: n., ``hot, warm, active.''\\
+\emph{hisa}: n., ``boiling, boil, boiled.'' From reduplicated \emph{hisa}, ``hot.''\\
+\emph{hiz\.{o}}: n., ``process.''\\
+\emph{hnag\.{a}}: n., ``path, movement, motion.''\\
+\emph{hn\'{i}}: n., ``education, training.''\\
+\emph{hnoy\.{e}}: n., ``failure, loss.''\\
+\emph{hn\.{u}r}: n., ``cold, inactive.''\\
+\emph{hmaha}: n., ``fruit.''\\
+\emph{hmak}: n., ``hour.''\\
+\emph{hmak\.{e}ssi}: n., ``morning.'' From \emph{hmak}, ``hour,'' and \emph{\.{e}ssi}, ``early.''\\
+\emph{hm\'{i}kku}: n., ``every, each, all.''\\
+\emph{hmur}: n., ``new.''\\
+\emph{howa}: n., ``danger.''\\
+\emph{h\.{o}h\.{o}}: n., ``dog.''\\
+\emph{hrasha}: n., ``mouth.''\\
+\emph{hrejjet}: n., ``gift, help.''\\
+\emph{hriko}: n., ``politics, governance, government.''\\
+\emph{hu}: n., ``land, earth, place.''\\
+\emph{hupa}: n., ``psyche, mind, brain.''\\
+\emph{huppis}: n., ``parent, mother, father.''\\
+\emph{huss\.{a}}: n., ``factually wrong, incorrect, mistake.''\\
+\emph{h\.{u}mma}: dem., ``there.''\\
+\emph{h\.{u}p}: n., ``West.''\\
+\emph{Ingan}: prop. n., ``England.'' From English \emph{England}, ``England.''\\
+\emph{j\.{a}d}: n., ``jade.''\\
+\emph{jod\.{a}r}: n., ``noise, yelling, onomatopoeia.''\\
+\emph{j\.{o}ro}: n., ``success, win.''\\
+\emph{kapa}: n., ``addition, summation.''\\
+\emph{kapo}: n., ``short, few, little.''\\
+\emph{kassi}: n., ``imitation.''\\
+\emph{kitan}: n., ``normal, average, median.''\\
+\emph{kitta}: n., ``manner, way.''\\
+\emph{kup}: n., ``negative number.''\\
+\emph{maggen}: n., ``thought, idea, sentiment, concept.''\\
+\emph{magi}: n., ``coat, jacket.''\\
+\emph{mahot}: n., ``holy, venerated thing, deity.''\\
+\emph{mahwe}: n., ``old, elder, old person, ancient.''\\
+\emph{maj}: n., ``person, human.''\\
+\emph{majjo}: n., ``clever, smart.''\\
+\emph{mak\.{a}}: n., ``light, brightness.''\\
+\emph{makke}: n., "the self. Used as a reflexive."\\
+\emph{m\.{a}net}: n., ``modesty, modest.''\\
+\emph{map}: n., ``donkey.''\\
+\emph{mapu}: n., ``leftover, thing that remains.''\\
+\emph{mar\.{u}k}: n., ``sense, taste, sight, sound, touch.''\\
+\emph{massi}: n., ``fortune, good luck.''\\
+\emph{mawa}: n., ``color.''\\
+\emph{may}: n., ``music.''\\
+\emph{m\.{a}sa}: n., ``hole, opening.''\\
+\emph{mej\.{a}k}: n., ``bird.''\\
+\emph{meppan}: n., ``center, main, central point.''\\
+\emph{m\.{e}}: prn., 2\textsuperscript{nd} person pronoun.\\
+\emph{mik}: n., ``anus.''\\
+\emph{mika}: n., ``weak, fragile, cowardly.''\\
+\emph{minta}: n., ``appreciation, respect.''\\
+\emph{mirre}: n., ``Roman mile.'' From Latin \emph{mille}, ``thousand.''\\
+\emph{mitta}: n., ``probability.''\\
+\emph{more}: n., ``flower.''\\
+\emph{mud\.{a}}: n., ``demonstration.''\\
+\emph{muh\.{e}}: m., ``strange, odd, funny, crazy.''\\
+\emph{m\.{u}s}: n., ``duty, necessity.''\\
+\emph{nahe}: n., ``beauty, beautiful.''\\
+\emph{nehha}: n., ``knowledge, information, understanding.''\\
+\emph{n\'{i}sor}: n., ``ready, prepared.''\\ 
+\emph{nokhay}: n., ``cave, cavern, hole.''\\
+\emph{nug\.{a}n}: n., ``deranged, psychotic, insane, crazy.''\\
+\emph{juh}: n., ``ordinal number.''\\
+\emph{kam}: prop. n., ``East.''\\
+\emph{karis}: n., ``synthetic, sterile, monotonous.''\\
+\emph{kawas}: n., ``platform.''\\
+\emph{kawas yar\'{i}}: n., ``the floor, the ground (when viewed from below.''\\
+\emph{kazza}: n., ``test, quiz.''\\
+\emph{k\.{a}ma}: n., ``effect, consequence.''\\
+\emph{keppa}: n., ``ant, small bug.''\\
+\emph{kin}: n., ``foot.''\\
+\emph{khag}: n., ``monkey, ape.''\\
+\emph{khota}: n., ``language.''\\
+\emph{khota d\.{u}}: prop. n., ``Hotadu.'' From \emph{khota}, ``language,'' and \emph{d\.{u}}, ``things.''\\
+\emph{khota z\.{a}g}: n., ``engineered language.'' From \emph{khota}, ``language,'' and \emph{z\.{a}g}, ``design.''\\
+\emph{kora}: n., ``woman.''\\
+\emph{kuha}: m., ``child.''\\
+\emph{mahi}: n., ``glory, honor.''\\
+\emph{meha}: n., ``body.''\\
+\emph{mek}: n., ``skill, competency, ability.''\\
+\emph{mekar}: n., ``trick, diversion.''\\
+\emph{M\.{e}hiko}: prop. n., ``Mexico.'' From Spanish \emph{M\'{e}xico}, ``Mexico.''\\
+\emph{m\.{e}ta}: n., ``man.''\\
+\emph{misa}: n., ``whole, entire.''\\
+\emph{m\'{i}so}: n., ``precision, precise thing.''\\
+\emph{otisot}: n., ``a few, a small number.''\\
+\emph{oshek}: n., ``blood once it has left the body.''\\
+\emph{raj\.{e}}: n., ``love, adoration.''\\
+\emph{rihan}: n., ``soul, essence.''\\
+\emph{rissi}: n., ``loud thing.''\\
+\emph{r\'{i}s}: n., ``change, diference.''\\
+\emph{rogh\.{u}}: n., ``strong thing.''\\
+\emph{r\.{u}ka}: n., ``neutral, indifferent.''\\
+\emph{p\.{a}s}: n., ``field, area of study.''\\
+\emph{p\.{a}s shehmi}: n., ``grammar, linguistics, morphosyntax.'' From \emph{p\.{a}s}, ``study,'' \emph{shehmi}, ``word.''\\
+\emph{p\.{a}s sukha}: n., ``espionage.'' From \emph{p\.{a}s}, ``study,'' and \emph{sukha}, ``secret.''\\
+\emph{peg}: n., ``floor.''\\
+\emph{pesse}: n., ``wish.''\\
+\emph{pizza}: n., ``end, endpoint.''\\
+\emph{ragh}: prop. n., ``South.''\\
+\emph{sa}: n., ``pair, couple.''\\
+\emph{s\.{a}r}: n., ``numerous, many.''\\
+\emph{saba}: n., ``conflict, argument, war, quarrel.''\\
+\emph{sabasawkin}: n., ``unarmed combat, melee.'' From \emph{saba}, ``conflict,'' \emph{saw}, ``hand,'' and \emph{kin}, ``foot.''\\
+\emph{sab\'{i}n}: n., ``smell.''\\
+\emph{sager}: n., ``internal blood.''\\
+\emph{saggu}: n., ``unheard of, unthinkable.''\\
+\emph{sama}: n., ``life, lifetime.''\\
+\emph{samahmur}: n., ``computer.'' From \emph{sama}, ``life,'' and \emph{hmur}, ``new.''\\
+\emph{samahmurekar}: n., ``computer lab.'' From \emph{sama}, ``life,'' \emph{hmur}, ``new,'' and \emph{ekar}, ``room.''\\
+\emph{sapa}: n., ``ethereal, celestial.''\\
+\emph{saw}: n., ``hand.''\\
+\emph{sawwa}: n., ``abbreviation.''\\
+\emph{sepam}: n., ``distance.''\\
+\emph{s\.{e}ga}: n., ``folk, common, relating to the people.''\\
+\emph{s\.{e}pe}: n., ``right hand direction.''\\
+\emph{shehmi}: n., ``phrase, sentence, words.''\\
+\emph{sh\.{u}r}: n., ``compact, dense.''\\
+\emph{so}: n., ``time.''\\
+\emph{soro}: n., ``road.''\\
+\emph{sig}: n., ``water, liquid.''\\
+\emph{simma}: n., ``end, finish.''\\
+\emph{sisote}: n., ``mocking bird.''\\
+\emph{sitar}: n., ``praise, bragging, brag.''\\
+\emph{siwar}: n., ``brother, sister, sibling.''\\
+\emph{s\'{i}m}: n., ``death, dead.''\\
+\emph{s\'{i}h}: n., ``food, nutrition, fuel.''\\
+\emph{s\'{i}h ba goras}: n., ``canned food.'' From \emph{s\'{i}h}, ``food,'' \emph{ba}, ``in,'' and \emph{goras}, ``can, jar.''\\
+\emph{s\'{i}tu}: n., ``turn, occasion, opportunity.''\\
+\emph{sohm\.{e}}: n., ``big thing.''\\
+\emph{Sohm\.{e}}: n., ``the universe.''\\
+\emph{sugh\.{e}}: n., ``certainty, assuredness.''\\
+\emph{suhaw}: n., ``idol, icon, holy artifact.''\\
+\emph{suhu}: n., ``group, cohort, class.''\\
+\emph{suk}: n., ``division.''\\
+\emph{sukha}: n., ``secret.''\\
+\emph{summak}: n., ``nose.''\\
+\emph{s\.{u}had}: n., ``adhesive paste, mortar.''\\
+\emph{tam}: n., ``imaginary number.''\\
+\emph{tippe}: n., ``day.''\\
+\emph{tuba}: n., ``vibration, shiver, shrill rhythmic beat.''\\
+\emph{t\.{u}ka}: n., ``transaction, sale, sell, buy.''\\
+\emph{t\.{u}mmis}: n., ``preference, will.''\\
+\emph{uppaj}: n., ``hair.''\\
+\emph{wah}: prn., 1\textsuperscript{st} person pronoun.\\
+\emph{wudu}: n., ``voodoo.'' From English \emph{voodoo}, ``voodoo.''\\
+\emph{yar\'{i}}: n., ``tall, high up.''\\
+\emph{yash\.{e}n}: n., ``ragdoll, flimsy, sagging, limp.''\\
+\emph{zagh\.{e}}: n., ``name, noun.''\\
+\emph{ZAN}: n., ``Internet, IP.'' From \emph{Zehho te Ay Nehha}, ``Internet Protocol.''\\
+\emph{z\.{a}g}: n., ``design, engineering.''\\
+\emph{zehho}: n., ``rule, regulation, convention.''\\
+\emph{Zehho te Ay Nehha}: n., ``Internet, Internet protocol.'' From \emph{zehho}, ``rule,'' \emph{ay}, ``communication,'' and \emph{nehha}, ``information.''\\
+\emph{z\.{e}ka}: ``enemy, antithesis, opposite.''\\
+\emph{z\'{i}girra}: n., ``offensive, arrow, attack.''\\
+\emph{zukk\.{o}}: n., ``safe, secured, not dangerous, fresh (with food).''\\
+\end{multicols}
+
+{\bf 3.2 Interjections, affixes, clitics, and particles}
+\begin{multicols}{2}
+\noindent
+\emph{a}: inquiring about noun particle, EoS.\\
+\emph{bak}: possible state particle, EoS.\\
+\emph{b\'{i}}: celebratory interjection, EoS.\\
+\emph{eso}: because.\\
+\emph{g\.{a}}: confusion/negation particle, EoS.\\
+\emph{ghu}: optative particle, EoS.\\
+\emph{ghu'o}: past optative particle, EoS.\\
+\emph{'gi}: 3-possessed, enclitic.\\
+\emph{hir}: maybe, perhaps.\\
+\emph{hro}: below-expectation interjection, EoS.\\
+\emph{'ju}: 2-possessed, enclitic.\\
+\emph{kap}: otherwise.\\
+\emph{mas}: above-expectation interjection, EoS.\\
+\emph{ne}: yes/no question particle, EoS.\\
+\emph{o}: regrettable event interjection, EoS.\\
+\emph{o}: vocative particle, BoS.\\
+\emph{se}: insulting/mocking interjection, EoS.\\
+\emph{sit}: surprised interjection, EoS.\\
+\emph{'ssho}: 1-possessed, enclitic.\\
+\emph{te}: amiguity-clearing particle.\\
+\emph{yak}: so, then.\\
+\emph{ye}: that.\\
+\emph{yisa}: but, however, although.\\
+\end{multicols}
+
+{\bf 3.3 Relationals}
+\begin{multicols}{3}
+\noindent
+\emph{ab}: faced away from.\\
+\emph{ba}: in.\\
+\emph{b\.{e}}: through.\\
+\emph{eku}: here.\\
+\emph{h\.{a}}: the past.\\
+\emph{h\.{e}k}: instead of.\\
+\emph{is}: about.\\
+\emph{\'{i}k}: away from, outside.\\
+\emph{kh\.{a}r}: directly on top of.\\
+\emph{kos}: after.\\
+\emph{kub}: above.\\
+\emph{man}: underneath.\\
+\emph{mat}: like, as.\\
+\emph{m\.{o}}: with.\\
+\emph{mus}: for, intended for.\\
+\emph{r\.{e}}: in front of.\\
+\emph{sam}: with (instrumental).\\
+\emph{s\.{e}m}: beside.\\
+\emph{sho}: towards.\\
+\emph{y\.{a}k}: evenly distributed across.\\
+\end{multicols}
+
+\clearpage
+{\bf \emph{4 Short texts}}\\
+\begin{center}
+The Tower of Babel\\
+\emph{Baber hay\.{u}}\\
+\end{center}
+
+Kos, khota ot ba H\.{e}ro hro. So te kos, majmaj ab kam, ba \.{e}mhu Shinar, kos, \.{e}mhu --- h\.{e}ro'gi. Shehmi'gi gege sho makke, ``happ\.{o} h\.{u} eso wahwah ghu.'' Gege m\.{o} happ\.{o} h\.{e}k gab, m\.{o} harro h\.{e}k s\.{u}had. Shehmi'gi, ``wahwah r\.{e} hnag\.{a}, babhay\.{u} m\.{o} hay\.{u} yar\'{i} yar\'{i}; wah m\.{o} j\.{o}ro ghu, kap y\.{a}k H\.{e}ro o.'' Yisa kos, Mahot ba H\.{e}ro, kos, hay\.{u} m\.{o} babhay\.{u} te'gi kuha'gi maj r\.{e} gab\.{e}'gi. Shehmi'gi, ``Majmaj --- ot, khota'gi --- ot, h\.{u} --- h\.{e}rat'gi; eku'so, pesse'gi --- h\.{e}rat'sho, kos, gege sam khota khota, kos, nehha bahe.'' Yak, kos, Mahot --- hisa, kos, gege y\.{a}k H\.{e}ro, kos, z\.{a}g'gi --- bahe. Yak zagh\.{e}'gi --- Baber, eso khota khota'gi H\.{e}ro --- s\.{a}r eso Mahot. Majmaj ba h\.{u}mma, kos, y\.{a}k H\.{e}ro eso Mahot. Simma.\\
+
+\begin{exe}
+
+\ex
+\gll kos khota ot ba h\.{e}ro hro\\
+then language one in earth \textsc{le}\\
+\trans \emph{Now the whole earth had one language and one speech.}
+
+\ex
+\gll so te kos maj-maj ab kam, ba \.{e}m-hu shinar kos \.{e}m-hu --- h\.{e}ro-'gi \\
+time of then person-\textsc{redup} faced.away east, in flat-land Shinar then flat-land \textsc{cop} home-\textsc{3.gen} \\
+\trans \emph{And it came to pass, as they journeyed from the east, that they found a plain in the land of Shinar, and they dwelt there.}
+
+\ex
+\gll shehmi-'gi ge-ge sho makke happ\.{o} h-\.{u} eso wah-wah ghu\\
+word-\textsc{3.gen} 3-\textsc{redup} towards \textsc{refl} brick \textsc{close}-1 because 1-\textsc{redup} \textsc{opt}\\
+\trans \emph{Then they said to one another, ``Come, let us make bricks and bake them thoroughly.''}
+
+\ex
+\gll ge-ge m\.{o} happ\.{o} h\.{e}k gab m\.{o} harro h\.{e}k s\.{u}had\\
+3-\textsc{redup} with brick instead.of rock with asphalt instead.of mortar\\
+\trans \emph{They had brick for stone, and they had asphalt for mortar.}
+
+\ex
+\gll shehmi-'gi wah-wah r\.{e} hnag\.{a} bab-hay\.{u} m\.{o} hay\.{u} yar\'{i} yar\'{i}\\
+word-\textsc{3.gen} 1-\textsc{redup} front.of road collection-tower with tower high high\\
+\trans \emph{And they said, ``Come, let us build ourselves a city, and a tower whose top is in the heavens;}
+
+\ex
+\gll wah m\.{o} j\.{o}ro ghu kap y\.{a}k h\.{e}ro o\\
+1 with success \textsc{opt} otherwise distributed.across earth \textsc{regret}\\
+\trans \emph{let us make a name for ourselves, lest we be scattered abroad over the face of the whole earth.''}
+
+\ex
+\gll yisa kos mahot ba h\.{e}ro kos hay\.{u} m\.{o} bab-hay\.{u} te-'gi kuha-'gi maj r\.{e} gab\.{e}-'gi\\
+but then god in earth then tower with collection-tower of-\textsc{3.gen} child-\textsc{3.gen} person in.front eye-\textsc{3.gen}\\
+\trans \emph{But the Lord came down to see the city and the tower which the sons of men had built.}
+
+\ex
+\gll shehmi-'gi maj-maj --- ot khota-'gi --- ot h-\.{u} --- h\.{e}rat-'gi\\
+word-\textsc{3.gen} person-\textsc{redup} \textsc{cop} one language-\textsc{3.gen} \textsc{cop} one 1-\textsc{close} \textsc{cop} action-\textsc{3.gen}\\
+\trans \emph{And the Lord said, ``Indeed the people are one and they all have one language, and this is what they begin to do;}
+
+\ex
+\gll eku-'so pesse-'gi --- h\.{e}rat-'sho kos ge-ge sam khota khota kos nehha bahe\\
+here-time wish-\textsc{3.gen} \textsc{cop} action-\textsc{1.gen} then 3-\textsc{redup} \textsc{instr} language language then understanding none\\
+\trans \emph{now nothing that they propose to do will be withheld from them. Come, let Us go down and there confuse their language, that they may not understand one another’s speech.''}
+
+\ex
+\gll yak kos mahot --- hisa kos ge-ge y\.{a}k h\.{e}ro kos z\.{a}g-'gi --- bahe\\
+therefore then god \textsc{cop} active then 3-\textsc{redup} spread.across earth then design-\textsc{3.gen} \textsc{cop} nothing\\
+\trans \emph{So the Lord scattered them abroad from there over the face of all the earth, and they ceased building the city.}
+
+\ex
+\gll yak zagh\.{e}-'gi --- baber eso khota khota-'gi h\.{e}ro --- s\.{a}r eso mahot\\
+so name-\textsc{3.gen} \textsc{cop} babel because language language-\textsc{3.gen} earth \textsc{cop} many because god\\
+\trans \emph{Therefore its name is called Babel, because there the Lord confused the language of all the earth;}
+
+\ex
+\gll maj-maj ba h\.{u}mma kos y\.{a}k h\.{e}ro eso mahot\\
+person-\textsc{redup} in there then spread.across earth because god\\
+\trans \emph{and from there the Lord scattered them abroad over the face of all the earth.}
+
+\ex
+\gll simma\\
+end\\
+\trans \emph{The end.}
+
+\end{exe}
+\clearpage
+
+\begin{center} 
+The North Wind and the Sun\\
+\emph{Ekko, Hebbash Sohm\.{e}}
+\end{center}
+
+Ekko m\.{o} Hebbash Sohm\.{e}, saba. D\.{u} sa, rogh\.{u} heb a? Kos, m\.{e}ta kh\.{a}r soro man ge. Shehmi'gi Ekko: ``Kos, wah --- sohm\.{e}, kos, ge \'{i}k magi'gi.'' Kos, Ekko --- sohm\.{e}. Kos, m\.{e}ta m\.{o} magi'gi --- sh\.{u}r sit. Shehmi'gi Hebbash Sohm\.{e}: ``Huss\.{a} se! As\'{i}.'' Kos, Hebbash Sohm\.{e} --- hisa. Kos, m\.{e}ta \'{i}k magi'gi. As\'{i} --- nehha'ssho wahwah, ye Hebbash Sohm\.{e} --- rogh\.{u}. Simma.
+
+\begin{exe}
+\ex
+\gll ekko m\.{o} hebbash sohm\.{e} saba\\
+wind with fire big conflict\\
+\trans \emph{There was a conflict between the Sun and the Wind.}
+
+\ex
+\gll d\.{u} sa rogh\.{u} heb a\\
+two thing strong one \textsc{inq}\\
+\trans \emph{Of the two things, which was strongest?}
+
+\ex
+\gll kos m\.{e}ta kh\.{a}r soro man ge\\
+then man on.top road beneath 3\\
+\trans \emph{A man appeared on the road beneath them.}
+
+\ex
+\gll shehmi-'gi ekko kos wah --- sohm\.{e} kos ge \'{i}k magi-'gi\\
+word-\textsc{3.gen} wind then 1 \textsc{cop} big then 3 away.from coat-\textsc{3.gen}\\
+\trans \emph{The Wind said: ``I will blow, and the man will take his coat off.''}
+
+\ex
+\gll kos ekko --- sohm\.{e} kos m\.{e}ta m\.{o} magi-'gi --- sh\.{u}r sit\\
+then wind \textsc{cop} big then man with coat-\textsc{3.gen} \textsc{cop} tight \textsc{surprise}\\
+\trans \emph{Then, the Wind blew, but the man only held his coat tighter.}
+
+\ex
+\gll shehmi-'gi hebbash sohm\.{e} huss\.{a} se as\'{i}\\
+word-\textsc{3.gen} fire big wrong \textsc{mock} \textsc{dem}\\
+\trans \emph{The Sun said: ``You are doing it wrong. Watch me.''}
+
+\ex
+\gll kos hebbash sohm\.{e} --- hisa kos m\.{e}ta \'{i}k magi-'gi\\
+then fire big \textsc{cop} hot then man away.from coat-\textsc{3.gen}\\
+\trans \emph{The Sun began to heat up, and the man removed his coat.}
+
+\ex
+\gll  as\'{i} --- nehha-'ssho wah-wah ye hebbash sohm\.{e} --- rogh\.{u}\\
+\textsc{dem} \textsc{cop} knowledge-1.\textsc{gen} 1-1 that fire big \textsc{cop} strong\\
+\trans \emph{This is how we know that the Sun is the strongest.}
+
+\ex
+\gll  simma\\
+end\\
+\trans \emph{The end.}
+\end{exe}
+\clearpage
+
+\begin{center}
+Gorilla Warfare\\
+\emph{Saba goriya}
+\end{center}
+
+Shehmi'ju a, o, mika se? Suhu \emph{Navy Seals}'ssho, eho'ssho --- yar\'{i} bag. Wah ba z\'{i}girra s\.{a}r mas, z\'{i}girra sho \emph{Al-Quaeda}. Ekki s\.{o}r s\'{i}ms\'{i}m eso wah mas. Hn\'{i}'ssho is saba goriya. Suhu s\'{i}m hriko te Am\.{e}rika, wah --- maj ag s\'{i}m m\'{i}so te aho bag. M\.{e} --- pizza z\'{i}girra hro se. Kos, wah sam m\'{i}so saggu, kos, m\.{e} --- s\'{i}m. Nehha'ju: eso m\.{e} sam ZAN, yak howa \'{i}k m\.{e}, ne? M\.{e} --- huss\.{a} se. wahwah ba so'gi heppa'ssho, kos hrasha'ssho --- m\.{a}sa, kos babay te p\.{a}s sukha y\.{a}k Am\.{e}rika'ssho --- hisa. M\.{e} r\.{e} hnag\.{a} hro, kos zagh\.{e} ZAN'ju ba hej\.{o}'ssho. N\'{i}sor ghu, o map se. Kos, wah --- hisa, kos, m\.{e} --- s\'{i}m. M\.{e} --- s\'{i}m, o, ebe se. Wah ba daro hm\'{i}kku, wah ba gega hm\'{i}kku. Wah sam saw'sho hro, m\.{e} --- s\'{i}m, kitta geh s\.{o}r mas! Mek te sabasawkin'sho --- yar\'{i} yar\'{i}, kos, wah sam bab ag s\'{i}m misa te Am\.{e}rika, kos, m\.{e} --- s\'{i}m, o hawmik se! K\.{a}ma'gi shehmi'ju ba hej\.{o}'ju ghu'o, kos, hrasha'ju --- sh\.{u}r. Yisa, hrasha'ju --- m\.{a}sa o, eku'so m\.{e} m\.{o} k\.{a}ma. Kos, m\.{e} is hawmik'sho se. M\.{e} --- s\'{i}m, o, ebe se!
+
+\begin{exe}
+\ex
+\gll shehmi-'ju a o mika se\\
+word-\textsc{1.gen} \textsc{inq} \textsc{voc} weak \textsc{mock}\\
+\trans \emph{What the fuck did you just fucking say about me, you little bitch?}
+
+\ex
+\gll suhu \emph{navy.seals}-'ssho eho-'ssho --- yar\'{i} bag\\
+group Navy.Seals-\textsc{1.gen} score-\textsc{1.gen} \textsc{cop} high most\\
+\trans \emph{I'll have you know I graduated top of my class in the Navy Seals,}
+
+\ex
+\gll wah ba z\'{i}girra s\.{a}r mas z\'{i}girra sho \emph{al.quaeda}\\
+1 in arrow many \textsc{he} arrow towards Al.Quaeda\\
+\trans \emph{and I've been involved in numerous raids on Al-Quaeda,}
+
+\ex
+\gll ekki s\.{o}r s\'{i}m-s\'{i}m eso wah mas\\
+three $10^2$ death-death because 1 \textsc{he}\\
+\trans \emph{and I have over 300 confirmed kills.}
+
+\ex
+\gll hn\'{i}-'ssho is saba goriya\\
+eduacation-\textsc{1.gen} about conflict gorilla\\
+\trans \emph{I am trained in gorilla warfare}
+
+\ex
+\gll suhu s\'{i}m hriko te am\.{e}rika wah --- maj ag s\'{i}m m\'{i}so te aho bag\\
+group death government of America 1 \textsc{cop} human tool death precision of competent most\\
+\trans \emph{and I'm the top sniper in the entire US armed forces.}
+
+\ex
+\gll m\.{e} --- pizza z\'{i}girra hro se\\
+2 \textsc{cop} end arrow \textsc{le} \textsc{mock}\\
+\trans \emph{You are nothing to me but just another target.}
+
+\ex
+\gll kos wah sam m\'{i}so saggu kos m\.{e} --- s\'{i}m\\
+then 1 \textsc{instr} precision unthinkable then 2 \textsc{cop} death\\
+\trans \emph{I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words.}
+
+\ex
+\gll nehha-'ju eso m\.{e} sam ZAN yak howa \'{i}k m\.{e} ne\\
+understanding-\textsc{2.gen} because 2 \textsc{instr} IP so danger away.from 2 \textsc{y/n}\\
+\trans \emph{You think you can get away with saying that shit to me over the Internet?}
+
+\ex
+\gll m\.{e} --- huss\.{a} se\\
+2 \textsc{cop} wrong \textsc{mock}\\
+\trans \emph{Think again, fucker.}
+
+\ex
+\gll wah-wah ba so-'gi heppa-'ssho kos hrasha-'ssho --- m\.{a}sa kos bab-ay te p\.{a}s sukha y\.{a}k Am\.{e}rika-'ssho --- hisa\\
+1-1 in time-\textsc{3.gen} conversation-\text{1.gen} then mouth-\textsc{1.gen} \textsc{cop} hole then network-communication of knowledge secret distributed.across America-\textsc{1.gen} \textsc{cop} active\\
+\trans \emph{As we speak I am contacting my secret network of spies across the USA}
+
+\ex
+\gll m\.{e} r\.{e} hnag\.{a} hro kos zagh\.{e} ZAN-'ju ba hej\.{o}-'ssho\\
+2 in.front path \textsc{le} then address IP-\textsc{2.gen} in head-\textsc{1.gen}\\
+\trans \emph{and your IP is being traced right now,}
+
+\ex
+\gll n\'{i}sor ghu o map se\\
+ready \textsc{opt} \textsc{voc} donkey \textsc{mock}\\
+\trans \emph{so you better prepare for the storm, maggot.}
+
+\ex
+\gll kos wah --- hisa kos m\.{e} --- s\'{i}m\\
+then 1 \textsc{cop} active then 2 \textsc{cop} death\\
+\trans \emph{The storm that wipes out the pathetic little thing you call your life.}
+
+\ex
+\gll m\.{e} --- s\'{i}m o ebe se\\
+2 \textsc{cop} death \textsc{voc} child \textsc{mock}\\
+\trans \emph{You're fucking dead, kid.}
+
+\ex
+\gll wah ba daro hm\'{i}kku wah ba gega hm\'{i}kku\\
+1 in place every 1 in occasion every\\
+\trans \emph{I can be anywhere, anytime,}
+
+\ex
+\gll wah sam saw-'sho hro m\.{e} --- s\'{i}m kitta geh s\.{o}r mas\\
+1 \textsc{instr} hand-\textsc{1.gen} \textsc{le} 2 \textsc{cop} death way 7 $10^2$ \textsc{he}\\
+\trans \emph{and I can kill you in over seven hundred ways, and that's just with my bare hands.}
+
+\ex
+\gll mek te saba-saw-kin-'sho --- yar\'{i} yar\'{i}\\
+skill of conflict-hand-foot-\textsc{1.gen} \textsc{cop} high high\\
+\trans \emph{Not only am I extensively trained in unarmed combat,}
+
+\ex
+\gll kos wah sam bab ag s\'{i}m misa te am\.{e}rika\\
+then 1 \textsc{instr} collection tool death entire of America\\
+\trans \emph{but I have access to the entire arsenal of the United States Marine Corps,}
+
+\ex
+\gll kos m\.{e} --- s\'{i}m o haw-mik se\\
+then 2 \textsc{cop} death \textsc{voc} waste-anus \textsc{mock}\\
+\trans \emph{and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit.}
+
+\ex
+\gll k\.{a}ma-'gi shehmi-'ju ba hej\.{o}-'ju ghu-'o\\
+effect-\textsc{3.gen} word-\textsc{2.gen} in head-\textsc{2.gen} \textsc{opt}-\textsc{regret}\\
+\trans \emph{If only you could have known what unholy retribution your little ``clever" comment was about to bring down upon you,}
+
+\ex
+\gll kos hrasha-'ju --- sh\.{u}r\\
+then mouth-\textsc{2.gen} \textsc{cop} tight\\
+\trans \emph{maybe you would have held your fucking tongue.}
+
+\ex
+\gll yisa hrasha-'ju --- m\.{a}sa o eku-'so m\.{e} m\.{o} k\.{a}ma\\
+but mouth-\textsc{2.gen} \textsc{cop} hole \textsc{regret} here-time 2 with effect\\
+\trans \emph{But you couldn't, you didn't, and now you're paying the price, you goddamn idiot.}
+
+\ex
+\gll kos m\.{e} is haw-mik-'sho se\\
+then 2 submerged.in waste-anus-\textsc{1.gen} \textsc{mock}\\
+\trans \emph{I will shit fury all over you and you will drown in it.}
+
+\ex
+\gll m\.{e} --- s\'{i}m o ebe se\\
+2 \textsc{cop} death \textsc{voc} child \textsc{mock}\\
+\trans \emph{You're fucking dead, kiddo.}
+\end{exe}
+\clearpage
+
+\begin{center}
+Amo el canto del cenzontle\\
+\emph{May'gi sisote r\.{e} ahm\.{a}'ssho --- nahe}\\
+\end{center}
+
+\noindent
+May'gi sisote r\.{e} ahm\.{a}'ssho --- nahe,\\
+Mej\.{a}k te hrasha s\.{a}r.\\
+Mawa'gi j\.{a}d r\.{e} gab\.{e}'ssho --- nahe,\\
+Sab\'{i}n'gi more r\.{e} summak'sho --- nahe,\\
+Yisa siwar'sho: m\.{e}ta r\.{e} hupa'ssho --- nahe bag.\\
+
+\begin{exe}
+\ex
+\gll may-'gi sisote r\.{e} ahm\.{a}-'ssho --- nahe\\
+m\'{u}sica-\textsc{3.gen} cenzontle frente.de orella-\textsc{1.gen} \textsc{cop} bello\\
+\trans \emph{Amo el canto del cenzontle,}
+
+\ex
+\gll mej\.{a}k te hrasha s\.{a}r\\
+pájaro de boca numerables\\
+\trans \emph{pájaro de cuatro cientas voces.}
+
+\ex
+\gll mawa-'gi j\.{a}d r\.{e} gab\.{e}-'ssho --- nahe\\
+color-\textsc{3.gen} jade frente.de ojo-\textsc{1.gen} \textsc{cop} bello\\
+\trans \emph{Amo el color del jade,}
+
+\ex
+\gll sab\'{i}n-'gi more r\.{e} summak-'sho --- nahe\\
+aroma-\textsc{3.gen} flor frente.de nariz-\textsc{1.gen} \textsc{cop} bello\\
+\trans \emph{y el enervante perfume de las flores.}
+
+\ex
+\gll yisa siwar-'sho m\.{e}ta r\.{e} hupa-'ssho --- nahe bag\\
+pero hermano-\textsc{1.gen} hombre frente.de mente-\textsc{1.gen} \textsc{cop} bello m\'{a}s\\
+\trans \emph{Pero más que eso, amo a mi hermano, el hombre.}
+\end{exe}
+\clearpage
+
+\begin{center}
+I'll fly away\\
+\emph{Kos, wah ba berr\.{a}sohm\.{e} h\.{e}}\\
+\end{center}
+
+\noindent
+Hmak\.{e}ssi m\.{o} mak\.{a}, so'gi simma'gi soro\\
+Kos, wah ba berr\.{a}sohm\.{e} h\.{e}\\
+Sho ekar sapa'gi Mahot\\
+Kos, wah ba berr\.{a}sohm\.{e} h\.{e}\\
+Berr\.{a}sohm\.{e}, o, mahi, berr\.{a}sohm\.{e}\\
+So'gi simma'ssho, haleluya\\
+Kos, wah ba berr\.{a}sohm\.{e} h\.{e}\\
+So'gi sama h\.{u}'gi gahmu \'{i}k eku\\
+Kos, wah ba berr\.{a}sohm\.{e} h\.{e}\\
+Kassi te mej\.{a}k \'{i}k harabbe\\
+Kos, wah ba berr\.{a}sohm\.{e} h\.{e}\\
+Mapu --- tippe otisot hro\\
+Kos, wah ba berr\.{a}sohm\.{e} h\.{e}\\
+Kos, wah ba \.{e}sa hu\\
+Kos, wah ba berr\.{a}sohm\.{e} h\.{e}\\
+
+\begin{exe}
+
+\ex
+\gll hmak-\.{e}ssi m\.{o} mak\.{a} so-'gi simma-'gi soro\\
+hour-early with light time-\textsc{3.gen} end-\textsc{3.gen} road\\
+\trans \emph{Some bright morning when this life is over}
+
+\ex
+\gll kos wah ba berr\.{a}-sohm\.{e} h-\.{e}\\
+then 1 in hat-big \textsc{dem.1}-\textsc{far}\\
+\trans \emph{I'll fly away}
+
+\ex
+\gll sho ekar sapa-'gi mahot\\
+towards house ethereal-\textsc{3.gen} god\\
+\trans \emph{To a home on God's celestial shore\emph{\footnote{The person being discussed, \emph{wah}, has already been established in the discourse, and need not be repeated, although it could be.}}}
+
+\ex
+\gll kos wah ba berr\.{a}-sohm\.{e} h-\.{e}\\
+then 1 in hat-big \textsc{dem.1}-\textsc{far}\\
+\trans \emph{I'll fly away}
+
+\ex
+\gll berr\.{a}-sohm\.{e} o mahi berr\.{a}-sohm\.{e}\\
+hat-big \textsc{voc} glory hat-big\\
+\trans \emph{I'll fly away, oh glory, I'll fly away}
+
+\ex
+\gll so-'gi simma-'ssho haleluya\\
+time-\textsc{3.gen} end-\textsc{1.gen} hallelujah\\
+\trans \emph{When I die, Hallelujah, bye and bye}
+
+\ex
+\gll kos wah ba berr\.{a}-sohm\.{e} h-\.{e}\\
+then 1 in hat-big \textsc{dem.1}-\textsc{far}\\
+\trans \emph{I'll fly away}
+
+\ex
+\gll so-'gi sama h-\.{u}-'gi gahmu \'{i}k eku\\
+time-\textsc{3.gen} \textsc{dem.1}-\textsc{close}-\textsc{3.gen} shadow away.from here \\
+\trans \emph{When the shadows of this life have gone}
+
+\ex
+\gll kos wah ba berr\.{a}-sohm\.{e} h-\.{e}\\
+then 1 in hat-big \textsc{dem.1}-\textsc{far}\\
+\trans \emph{I'll fly away}
+
+\ex
+\gll kassi te mej\.{a}k \'{i}k har-abbe\\
+imitation of bird away.from barrier-prison\\
+\trans \emph{Like a bird from the prison bars has flown}
+
+\ex
+\gll kos wah ba berr\.{a}-sohm\.{e} h-\.{e}\\
+then 1 in hat-big \textsc{dem.1}-\textsc{far}\\
+\trans \emph{I'll fly away}
+
+\ex
+\gll mapu --- tippe ot-isot hro\\
+leftover \textsc{cop} day one-two \textsc{le}\\
+\trans \emph{Just a few more weary days and then}
+
+\ex
+\gll kos wah ba berr\.{a}-sohm\.{e} h-\.{e}\\
+then 1 in hat-big \textsc{dem.1}-\textsc{far}\\
+\trans \emph{I'll fly away}
+
+\ex
+\gll kos wah ba \.{e}sa hu\\
+then 1 in happy land\\
+\trans \emph{To a land where joys will never end}
+
+\ex
+\gll kos wah ba berr\.{a}-sohm\.{e} h-\.{e}\\
+then 1 in hat-big \textsc{dem.1}-\textsc{far}\\
+\trans \emph{I'll fly away}
+
+\end{exe}
+\clearpage
+
+\begin{center}
+I have no mouth and I must scream\\
+\emph{Wah sam hrasha bahe, jod\.{a}r --- m\.{u}s'sho}\\
+\end{center}
+
+Meha'gi G\.{o}rister kh\.{a}l kawas gish --- yash\.{e}n. Ba samahmurekar, kub wahwah, m\.{o} tuba bahe yisa hn\.{u}r. Kos, b\.{o}gi m\'{i}so b\.{e} ahm\.{a} kos sager'gi --- oshek. Oshek bahe kh\.{a}l peg gareg. Kos, G\.{o}rister m\.{o} wahwah kos meha'gi --- mekar ba hej\.{o}'ssho. Gar\'{i}s'sho te hamme mahwe mahwe y\.{a}k peg. Shehmi'gi G\.{o}rister, ``O, Mahot!'' Gi mat suhaw wudu r\.{e} gab\.{e}'gi, gi --- ah\.{a}l. Kos, saw'gi Elen ba uppaj'gi. Shehmi'gi G\.{o}rister, ``wahwah --- s\'{i}m ghu, so kapo ba rihan'sho o!'' Dehni h\.{u} --- wahwah ba samahmur dehni 109\textsuperscript{jh}'sho; shehmi'gi --- maggen'sho wahwah hm\'{i}kku.\\
+
+Zagh\.{e}'gi Nimdok eso AM m\.{o} raj\.{e} jod\.{a}r muh\.{e}, maggen'gi --- s\'{i}h ba goras te ba nokhay gabhn\.{u}r. Wah m\.{o} G\.{o}rister te m\.{o} sugh\.{e} bahe. Shehmi'ssho, ``Mekar hep, mekar mat erepanta hn\.{u}r hn\.{u}r yak kos Beni --- muh\.{e}. Kos, wahwah ba h\.{u}mma, kos, gi --- zukk\.{o} bahe. Hnag\.{a} bahe ghu. AM m\.{o} maggen bahe, yak wahwah --- s\'{i}m.'' Beni --- r\.{u}ka. Wahwah m\.{o} tippe ekki m\.{o} s\'{i}h bahe, s\'{i}h'sho gereg --- gusano sh\.{u}r.\\
+
+Nimdok mat wahwah te m\.{o} sugh\.{e} bahe, nehha'gi --- mitta guha, yisa h\.{u}mma mat d\'{i}sh te ekegh yar\'{i} te --- mitta bahe. Hn\.{u}r bak, t\.{u}mmis'gi te maj a? Hn\.{u}r, hisa, m\.{o} g\.{a}pe bahe. Kos, samahmur sam mekar, kos, wah hn\.{u}r kap wah --- s\'{i}m. Shehmi'gi Elen, ``S\'{i}h --- m\.{u}s'sho, hisa ghu ghu.'' Kos, wah m\.{o} saba bahe, daro'ssho m\.{o} g\.{a}pe guha. Elen --- \.{e}sa eso wah. Gega 2 gi m\.{o} wah yisa s\'{i}tu'ssho ba h\.{u}mma, gi m\.{o} wah hep te m\.{o} g\.{a}pe bahe. Gega hm\'{i}kku wahwah r\.{e} gab\.{e}'gi AM. AM sam rihan bahe, gi --- huppis nug\.{a}n'sho.\\
+
+Tippe te hnag\.{a}'ssho --- tippe meh'juh. So hm\'{i}kku, so ba hej\.{o}'gi AM. Elen --- yar\'{i} eso Nimdok m\.{o} G\.{o}rister. Wah r\.{e} gigi, gigi r\.{e} Beni; as\'{i} yak Elen --- zukk\.{o}. Sepam'gi wahwah m\.{o} nokhay gabhnuur --- mirre s\.{o}r hro. Tippe 2\textsuperscript{jh}, wahwah sam s\'{i}h eso AM, mar\.{u}k'gi s\'{i}h --- hawsig benso hisahisa. Kos, gi ba hrasha'ssho. Tippe 3\textsuperscript{jh}, wah ba \.{e}mguhahu, ekos samahmur te zukk\.{o} bahe ba \.{e}mguhahu. Ekegh'gi AM sho makke --- ekegh'gi sho wah.\\
+
+Kos, mak\.{a} r\.{e} gab\.{e}'ssho, kos, kawas yar\'{i} h\.{u} ba hej\.{o}'ssho. Wahwah m\.{o} hisa bahe. H\.{u}mma, bahe. Wah \'{i}gh m\.{o} AM hro. Shehmi'gi Elen, ``o Beni, hisa bahe ghu nu.'' Shehmi guha'gi Beni sho bahe. Wahwah \'{i}gh, hir massi'gi Beni yar\'{i}, eso kos, hupa'gi \'{i}k hej\.{o}'gi. AM ba hej\.{o}'ssho --- ekegh ekegh, yisa so hm\'{i}kku, AM  h\.{u}. Kos, Beni s\.{e}m har, sho berr\.{a}sohm\.{e}. Ge mat khag eso AM.\\
+
+\begin{exe}
+
+%PAGE 1 PARAGRAPH 1
+
+\ex 
+\gll meha-'gi g\.{o}rister kh\.{a}l kawas gish --- yash\.{e}n\\
+body-3.\textsc{gen} Gorrister on.top platform pink \textsc{cop} limp\\
+\trans \emph{Gorrister's body hung limp from the pink palette.}
+
+\ex 
+\gll ba sama-hmur-ekar kub wah-wah m\.{o} tuba bahe yisa hn\.{u}r\\
+in life-new-room above 1-\textsc{redup} with shiver none although cold\\
+\trans \emph{He was above us in the computer room, not shivering despite the cold.}
+
+\ex
+\gll hej\.{o}-'gi meha ab meha kin s\.{e}pe-'gi kh\.{a}l kawas\\
+head-3.\textsc{gen} body faced.away body foot right-3.\textsc{gen} on.top platform\\
+\trans \emph{His head was faced down, with his right foot just touching the palette.}
+
+\ex
+\gll kos b\.{o}gi m\'{i}so b\.{e} ahm\.{a} kos sager-'gi --- oshek\\
+then incision precise through ear then internal.blood-3.\textsc{gen} \textsc{cop} external.blood\\
+\trans \emph{His blood had been drained from a precise incision through his ear.}
+
+\ex
+\gll oshek bahe kh\.{a}l peg gareg\\
+external.blood none on.top floor metal\\
+\trans \emph{There was no blood on the metallic floor.}
+
+%PAGE 1 PARAGRAPH 2
+
+\ex
+\gll kos g\.{o}rister m\.{o} wah-wah kos meha-'gi --- mekar ba hej\.{o}-'ssho\\
+then Gorrister with 1-\textsc{redup} then body-3.\textsc{gen} \textsc{cop} trick in head-1.\textsc{gen}\\
+\trans \emph{Gorrister joined us, and we realized his body had been a trick.}
+
+\ex
+\gll gar\'{i}s-'sho te hamme mahwe mahwe y\.{a}k peg\\
+vomit-1.\textsc{gen} of reflex old old spread.across floor\\
+\trans \emph{Our vomit of ancient reflex covered the floor.}
+
+%PAGE 1 PARAGRAPH 3
+
+\ex
+\gll shehmi-'gi g\.{o}rister o mahot\\
+word-3.\textsc{gen} Gorrister \textsc{voc} god\\
+\trans \emph{Gorrister said, ``Oh, God.''}
+
+\ex
+\gll gi mat suhaw wudu r\.{e} gab\.{e}-'gi gi --- ah\.{a}l\\
+3 like artifact voodoo in.front eye-3.\textsc{gen} 3 \textsc{cop} afraid\\
+\trans \emph{He looked as if he was looking at a voodoo idol, very afraid.}
+
+\ex
+\gll kos saw-'gi elen ba uppaj-'gi\\
+then hand-3.\textsc{gen} Ellen in hair-3.\textsc{gen}\\
+\trans \emph{Ellen ran her hand through his hair.}
+
+\ex
+\gll shehmi-'gi g\.{o}rister wah-wah --- s\'{i}m ghu\\
+word-3.\textsc{gen} Gorrister 1-\textsc{redup} \textsc{cop} dead \textsc{opt}\\
+\trans \emph{Gorrister said, ``please kill us,}
+
+\ex
+\gll so kapo ba rihan-'sho o\\
+time little in soul-1.\textsc{gen} \textsc{regret}\\
+\trans \emph{such little time is left in my soul!''}
+
+%PAGE 1 PARAGRAPH 4
+
+\ex
+\gll dehni h-\.{u} --- wah-wah ba sama-hmur dehni ot s\.{o}r ut juh-'sho\\
+day \textsc{close}-1 \textsc{cop} 1-\textsc{redup} in life-new day one $10^2$ 9 \textsc{ord}-1.\textsc{gen}\\
+\trans \emph{This year is our 109\textsuperscript{th} year in the computer.}
+
+%PAGE 1 PARAGRAPH 5
+
+\ex
+\gll shehmi-'gi --- maggen-'sho wah-wah hm\'{i}kku\\
+word-3.\textsc{gen} \textsc{cop} thought-1.\textsc{gen} 1-\textsc{redup} every\\
+\trans \emph{His words were all of our thoughts.}
+
+%PAGE 1 PARAGRAPH 6
+
+\ex 
+\gll zagh\.{e}-'gi nimdok eso am m\.{o} raj\.{e} jod\.{a}r muh\.{e}\\
+name-3.\textsc{gen} Nimdok because AM with love sound strange\\
+\trans \emph{Nimdok was called Nimdok because AM loved strange sounds.}
+
+\ex 
+\gll maggen-'gi --- s\'{i}h ba goras te ba nokhay gab-hn\.{u}r\\
+idea-3.\textsc{gen} \textsc{cop} food in can of in cave rock-cold\\
+\trans \emph{He thought there was canned food in the ice caverns.}
+
+\ex
+\gll wah m\.{o} g\.{o}rister te m\.{o} sugh\.{e} bahe\\
+1 with Gorrister of with certainty none\\
+\trans \emph{Gorrister and I had no certainty.}
+
+\ex
+\gll shehmi-'ssho mekar hep\\
+word-1.\textsc{gen} trick other\\
+\trans \emph{I said, ``It's another trick.''}
+
+\ex
+\gll mekar mat erepanta hn\.{u}r hn\.{u}r yak kos beni --- muh\.{e}\\
+trick as elephant cold cold so then Benny \textsc{cop} crazy\\
+\trans \emph{It is a trick, just like the frozen elephant that made Benny crazy.}
+
+\ex
+\gll kos wah-wah ba h\.{u}mma kos gi --- zukk\.{o} bahe\\
+then 1-\textsc{redup} in there then 3 \textsc{cos} fresh none\\
+\trans \emph{We will arrive there and it will be rotten.}
+
+\ex
+\gll hnag\.{a} bahe ghu\\
+movement none \textsc{opt}\\
+\trans \emph{We should not go.}
+
+\ex
+\gll am m\.{o} maggen bahe yak wah-wah --- s\'{i}m\\
+AM with idea none then 1-\textsc{redup} \textsc{cop} dead\\
+\trans \emph{If AM does not come up with any ideas, we will be dead soon.}
+
+%PAGE 1 PARAGRAPH 7
+
+\ex 
+\gll beni --- r\.{u}ka\\
+Benny \textsc{cop} indifferent\\
+\trans \emph{Benny was indifferent.}
+
+\ex
+\gll wah-wah m\.{o} tippe ekki m\.{o} s\'{i}h bahe\\
+1-\textsc{redup} with day three with food none\\
+\trans \emph{We had gone three days with no food.}
+
+\ex
+\gll s\'{i}h-'sho gereg --- gusano sh\.{u}r\\
+food-1.\textsc{gen} recent \textsc{cop} worm dense\\
+\trans \emph{Our most recent meal was thick worms.}
+
+%PAGE 1 PARAGAPH 8
+
+\ex
+\gll nimdok mat wah-wah te m\.{o} sugh\.{e} bahe\\
+Nimdok as 1-\textsc{redup} of with certainty none\\
+\trans \emph{Nimdok was as uncertain as we.}
+
+\ex 
+\gll nehha-'gi --- mitta guha\\
+knowledge-3.\textsc{gen} \textsc{cop} probability low\\
+\trans \emph{He knew the probability is low.}
+
+\ex
+\gll yisa h\.{u}mma mat d\'{i}sh te ekegh yar\'{i} te --- mitta bahe\\
+but there as here of bad most of \textsc{cop} probability none\\
+\trans \emph{But the probability it is worse than here is none.}
+
+\ex
+\gll hn\.{u}r bak t\.{u}mmis-'gi te maj a\\
+cold \textsc{y/n} preference-3.\textsc{gen} of person \textsc{inq}\\
+\trans \emph{Who cares if it is cold?}
+
+\ex
+\gll hn\.{u}r hisa m\.{o} g\.{a}pe bahe\\
+cold hot with importance none\\
+\trans \emph{It doesn't matter if it's cold or hot.}
+
+\ex
+\gll kos sama-hmur sam mekar kos wah hn\.{u}r kap wah --- s\'{i}m\\
+then life-new \textsc{instr} trick then 1 inactive otherwise 1 \textsc{cop} dead\\
+\trans \emph{We had to put up with the computer's tricks or we would die.}
+
+%PAGE 1 PARAGRAPH 9
+
+\ex
+\gll shehmi-'gi elen s\'{i}h --- m\.{u}s-'sho hisa ghu ghu\\
+word-3.\textsc{gen} Ellen food \textsc{cop} obligation-1.\textsc{gen} heat \textsc{opt} \textsc{opt}\\
+\trans \emph{Ellen said, ``We must eat. Please, let's do it.''}
+
+%PAGE 2 PARAGRAPH 1
+
+\ex
+\gll kos wah m\.{o} saba bahe\\
+then 1 with fight none\\
+\trans \emph{I didn't put up a fight.}
+
+\ex
+\gll daro-'ssho m\.{o} g\.{a}pe guha\\
+place-1.\textsc{gen} with importance none\\
+\trans \emph{It didn't matter where we were anyway.}
+
+\ex
+\gll elen --- \.{e}sa eso wah\\
+Ellen \textsc{cop} happy because 1\\
+\trans \emph{I made Ellen happy.}
+
+\ex
+\gll gega isot gi m\.{o} wah yisa s\'{i}tu-'ssho ba h\.{u}mma\\
+time two 3 with 1 but turn-1.\textsc{gen} in there\\
+\trans \emph{She was with me twice even though it wasn't my turn.}
+
+\ex
+\gll gi m\.{o} wah hep te m\.{o} g\.{a}pe bahe\\
+3 with 1 other of with importance none\\
+\trans \emph{Her being with me didn't matter either.}
+
+\ex
+\gll gega hm\'{i}kku wah-wah r\.{e} gab\.{e}-'gi am\\
+time every 1-\textsc{redup} in.front eye-3.\textsc{gen} AM\\
+\trans \emph{Every time, AM watched us.}
+
+\ex
+\gll am sam rihan bahe\\
+AM \textsc{instr} soul none\\
+\trans \emph{AM didn't have a soul.}
+
+\ex
+\gll gi --- huppis nug\.{a}n-'sho\\
+3 \textsc{cop} parent deranged-1.\textsc{gen}\\
+\trans \emph{He was our deranged parent.}
+
+%PAGE 2 PARAGRAPH 2
+
+\ex
+\gll tippe te hnag\.{a}-'ssho --- tippe meh-'juh\\
+day of movement-1.\textsc{gen} \textsc{cop} day 4-\textsc{ord}\\
+\trans \emph{We left on a Thursday.}
+
+\ex
+\gll so hm\'{i}kku so ba hej\.{o}-'gi am\\
+time every time in brain-3.\textsc{gen} AM\\
+\trans \emph{AM always knew the time.}
+
+%PAGE 2 PARAGRAPH 3
+
+\ex
+\gll elen --- yar\'{i} eso nimdok m\.{o} g\.{o}rister\\
+Ellen \textsc{cop} high because Nimdok with Gorrister\\
+\trans \emph{Ellen was carried by Nimdok and Gorrister.}
+
+\ex
+\gll wah r\.{e} gi-gi gi-gi r\.{e} beni\\
+1 in.front 3-\textsc{redup} 3-\textsc{redup} in.front Benny\\
+\trans \emph{I walked in front of them, and Benny behind.}
+
+\ex
+\gll as\'{i} yak elen --- zukk\.{o}\\
+that.way so.that Ellen \textsc{cop} safe\\
+\trans \emph{We did it this way so that Ellen would remain safe.}
+
+%PAGE 2 PARAGRAPH 4
+
+\ex
+\gll sepam-'gi wah-wah m\.{o} nokhay gab-hn\.{u}r --- mirre s\.{o}r hro\\
+distance-3.\textsc{gen} 1-\textsc{redup} with cave rock-cold \textsc{cop} mile $10^2$ \textsc{be}\\
+\trans \emph{We were only 100 miles to the ice caverns.}
+
+\ex
+\gll tippe isot juh wah-wah sam s\'{i}h eso am\\
+day two \textsc{ord} 1-\textsc{redup} \textsc{instr} food because AM\\
+\trans \emph{On the second day, AM sent food.}
+
+\ex
+\gll mar\.{u}k-'gi s\'{i}h --- haw-sig benso hisa-hisa\\
+sense-3.\textsc{gen} food \textsc{cop} waste-water pig hot-hot\\
+\trans \emph{It tasted like boiled boar urine.}
+
+\ex
+\gll kos gi ba hrasha-'ssho\\
+then 3 in mouth-1.\textsc{gen}\\
+\trans \emph{We ate it anyway.}
+
+%PAGE 2 PARAGRAPH 5
+
+\ex
+\gll tippe ekki juh kos wah ba \.{e}m-guha-hu\\
+day three \textsc{ord} then 1 in flat-low-land\\
+\trans \emph{On the third day, we entered a valley.}
+
+\ex
+\gll ekos sama-hmur te zukk\.{o} bahe ba \.{e}m-guha-hu\\
+part life-new of fresh none in flat-low-land\\
+\trans \emph{In that valley, there were rusting computer parts.}
+
+\ex
+\gll ekegh-'gi am sho makke --- ekegh-'gi sho wah\\
+cruelty-3.\textsc{gen} AM towards \textsc{refl} \textsc{cop} cruelty-3.\textsc{gen} towards 1\\
+\trans \emph{AM's cruelty to himself was just as great as his cruelty towards us.}
+
+%PAGE 2 PARAGRAPH 6
+\ex
+\gll kos mak\.{a} r\.{e} gab\.{e}-'ssho kos kawas yar\'{i} h-\.{u} ba hej\'{o}-'ssho\\
+then light in.front eye-1.\textsc{gen} then platform high 1-\textsc{close} in head-1.\textsc{gen}\\
+\trans \emph{We saw light, and realized we were near the surface.}
+
+\ex
+\gll wah-wah m\.{o} hisa bahe\\
+1-\textsc{redup} with heat none\\
+\trans \emph{We didn't move up.}
+
+\ex
+\gll h\.{u}mma bahe\\
+there nothing\\
+\trans \emph{There was nothing there.}
+
+\ex
+\gll wah \'{i}gh m\.{o} am hro\\
+1 5 with AM \textsc{le}\\
+\trans \emph{There was only us 5, and AM.}
+
+%PAGE 2 PARAGRAPH 7
+\ex 
+\gll shehmi-'gi elen o beni hisa bahe ghu nu\\
+word-3.\textsc{gen} Ellen \textsc{voc} Benny heat none \textsc{opt} \textsc{pol}\\
+\trans \emph{Ellen said, ``Benny, please don't do it.''}
+
+%PAGE 2 PARAGRAPH 8
+\ex
+\gll shehmi guha-'gi beni sho bahe\\
+word low-3.\textsc{gen} Benny towards none\\
+\trans \emph{Benny was murmuring under his breath.}
+
+\ex
+\gll wah-wah \'{i}gh hir massi-'gi beni yar\'{i}\\
+1-\textsc{redup} 5 perhaps luck-3.\textsc{gen} Benny high\\
+\trans \emph{Of the five of us, perhaps Benny was the luckiest.}
+
+\ex
+\gll eso kos hupa-'gi \'{i}k hej\.{o}-'gi\\
+because then psyche-3.\textsc{gen} away.from brain-3.\textsc{gen}\\
+\trans \emph{For he had lost his mind already.}
+
+%PAGE 2 PARAGRAPH 9
+\ex
+\gll am ba hej\.{o}-'ssho --- ekegh ekegh\\
+AM in head-1.\textsc{gen} \textsc{cop} bad bad\\
+\trans \emph{We hated AM.}
+
+\ex
+\gll yisa so hm\'{i}kku am h-\.{u}\\
+but time every AM 1-\textsc{close}\\
+\trans \emph{But we could never escape him.}
+
+\ex
+\gll kos beni s\.{e}m har sho berr\.{a}-sohm\.{e}\\
+then Benny beside wall towards hat-big\\
+\trans \emph{Benny started climbing up the wall.}
+
+\ex
+\gll ge mat khag eso am\\
+3 like monkey because AM\\
+\trans \emph{He looked like the chimpanzee AM turned him into.}
+
+\end{exe}
+
+\end{document}
