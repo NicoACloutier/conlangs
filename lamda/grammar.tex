@@ -1,0 +1,141 @@
+\documentclass{article}[10pt]
+
+\usepackage[a4paper, total={6in, 10in}]{geometry}
+\usepackage{tabularx}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{tipa}
+\usepackage{multicol}
+\usepackage{gb4e}
+\usepackage{titling}
+\usepackage{tabularray}
+\usepackage{qtree}
+\usepackage{amssymb}
+\usepackage{vowel}
+
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.3em}%
+}
+
+\newcommand{\subauthor}[1]{%
+  \postauthor{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.3em}%
+}
+
+\newcommand{\define}[2]{\emph{#1}: ``#2.'' \\}
+
+\title{Lamda Grammar\\with Texts and Vocabulary}
+\subtitle{
+\emph{}
+%\vspace{0.3cm} \\ \includegraphics[scale=0.22]{title2.png}
+}
+\author{Nicolas Antonio Cloutier}
+
+\begin{document}
+\maketitle
+
+\vspace{0.25in}
+
+{\begin{center}
+\includegraphics[scale=0.25]{circleflag.png} \end{center}}
+
+\vspace{0.25in}
+
+{\begin{center}
+\emph{}\\
+\vspace{0.5cm}
+---Teri Paxet
+\end{center}}
+
+\clearpage
+{\bf \emph{1 Phonology}}\\
+
+\begin{center}
+\emph{Table I: Consonants}
+\begin{tabular}{ |c|c|c|c|c|c|c| }
+\hline
+ & \bf{Labial} & \bf{Alveolar} & \bf{Postalveolar} & \bf{Palatal} & \bf{Velar} & \bf{Glottal} \\ \hline
+\bf{Plosive} & (\textsuperscript{m})p & (\textsuperscript{n})t (\textsuperscript{n})d & & & (\textsuperscript{\textipa{N}})k (\textsuperscript{\textipa{N}})g & \textipa{P} \\ \hline
+\bf{Nasal} & m  &  n  & & \textltailn  & \textipa{N}  & \\ \hline
+\bf{Trill} & & r & & & & \\\hline
+\bf{Fricative} & f & s & \textesh & &  & h \\ \hline
+\bf{Approximant} & w & l & & & (w) &  \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\emph{Table II: Romanization of consonants}
+\begin{tabular}{ |c|c|c|c|c|c|c| }
+\hline
+ & \bf{Labial} & \bf{Alveolar} & \bf{Postalveolar} & \bf{Palatal} & \bf{Velar} & \bf{Glottal} \\ \hline
+\bf{Plosive} & (m)p & (n)t (n)d & & & (n)c/qu (m)g/gu & ' \\ \hline
+\bf{Nasal} & m & n & \~{n} & & ng/ngu & \\ \hline
+\bf{Trill} & & hr r & & & & \\\hline
+\bf{Fricative} & f & z/c & x & & & j \\ \hline
+\bf{Approximant} & hu & l & & & & \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{multicols}{2}
+{\begin{center}
+\emph{Figure I: Vowels}\\
+ \Large
+\begin{vowel}
+	\putcvowel[l]{i}{1}
+	\putcvowel[l]{e}{2}
+	\putcvowel[l]{a}{4}
+	\putcvowel[l]{\textipa{1}}{9}
+\end{vowel} \end{center}}
+
+{\begin{center}
+\emph{Figure II: Romanization of vowels}\\
+ \Large
+\begin{vowel}
+	\putcvowel[l]{i}{1}
+	\putcvowel[l]{e}{2}
+	\putcvowel[l]{a}{4}
+	\putcvowel[l]{y}{9}
+\end{vowel} \end{center}}
+\end{multicols}
+
+In unstressed syllables, /a/ is prounced as [\textipa{v}], and /i/ as [\textipa{I}]. Spanish rules are followed when multiple romanizations given. For example, /si/ is written as $\langle$ci$\rangle$, but /sa/ is written as $\langle$za$\rangle$, /gi/ is written as $\langle$gui$\rangle$ but /ga/ is written as $\langle$ga$\rangle$. All syllables in Landa are (C)(C)V. Adjacent vowels are treated as nuclei of separate syllables. Stress can be varied, and is marked by the acute diacritic, unless stress is on the penultimate syllable of a multisyllabic word. If a monosyllabic word receives stress, its vowel is marked with an acute.
+
+\clearpage
+{\bf \emph{2 Grammar}}\\
+
+{\bf 2.1 \emph{sre} $\cdots$ \emph{sre} --- \texttt{let}}
+
+{\bf 2.2 \emph{la} $\cdots$ \emph{y} --- function declaration}
+
+{\bf 2.3 \emph{gte} --- monadic \texttt{bind}}
+ 
+{\bf 2.4 \emph{nci} $\cdots$ \emph{nci} --- multiple monadic \texttt{bind}}
+
+{\bf 2.5 \emph{xe} $\cdots$ \emph{xe} --- \texttt{where}}
+
+{\bf 2.6 \emph{ne} --- the \texttt{Statement} monad}
+
+\clearpage
+{\bf \emph{3 Semantics and Lexicon}}\\
+
+{\bf 3.1 The human class}
+
+{\bf 3.2 The action class}
+
+{\bf 3.3 The animate non-human class}
+
+{\bf 3.4 The category class}
+
+{\bf 3.5 The concept class}
+
+\clearpage
+{\bf \emph{4 Short texts}}\\
+
+\end{document}
