@@ -29,7 +29,7 @@
     \vskip0.3em}%
 }
 
-\newcommand{\define}[4]{\emph{#1} [ \texttt{#2} $\rightarrow$ \texttt{#3} ] : #4. \\}
+\newcommand{\define}[4]{\emph{#1} [ \textsc{#2} $\rightarrow$ \textsc{#3} ] : #4. \\}
 \newcommand{\defarg}[2]{\emph{#1}: ``#2.''\\}
 
 \title{Lamda Grammar\\with Texts and Vocabulary}
@@ -111,9 +111,28 @@ In unstressed syllables, /a/ is prounced as [\textipa{v}], and /i/ as [\textipa{
 \clearpage
 {\bf \emph{2 Grammar}}\\
 
-{\bf 2.1 \emph{sre} $\cdots$ \emph{ji} $\cdots$ \emph{sre} --- \texttt{let}}
+{\bf 2.1 \emph{sre} $\cdots$ \emph{xi} $\cdots$ \emph{sre} $\cdots$ --- \texttt{let}}
 
-{\bf 2.2 \emph{la} $\cdots$ \emph{y} --- function declaration}
+A \texttt{let} statement can be used to define a variable, and state its equality to some known concept. In Lamda, all variables begin with vowels, but the specific form is up to the speaker. Because the semantic value of variables is determined through the process of speech, the phonological structure of this variable is completely unimportant so long as it is defined properly. This means that variables have no internal strucutre in terms of morphology, and are essentially atoms that store semantic meaning.\\
+
+The first part of a \texttt{let} statement is \emph{sre}, which marks that a \texttt{let} statement is beginning. After this, the name of the variable should be given. This is then followed by \emph{xi}, which declares the semantic class of the variable, which is, just as the  variable itself, immutable. After this, another \emph{sre} is given, followed by the definition of the word. Take the following example:
+
+\begin{exe}
+\ex
+\gll sre a xi j\'{u} sre xojque xojque r'e John\\
+\texttt{let}.\textsc{begin} $v_1$ \textsc{class} \textsc{human} \texttt{let}.\textsc{end} parent parent from.name John\\
+\trans Let \emph{a} refer to John's grandparent.
+\end{exe}
+
+Here, a variable \emph{a} (glossed as variable 1, or $v_1$) is instantiated and declared to refer to an object of the \emph{j\'{u}} (\textsc{Human}) semantic class. Further, it is defined to refer to the parent of the parent of the person named John. This is achieved first through looking at the final name, and then applying the predicate \emph{r'e} to it, which is of the type [ \textsc{Foreign} $\rightarrow$ \textsc{Human} ], that is, it takes a proper noun and returns a human. Specifically, this predicate returns a human that is of a particular name given the proper noun passed as its sole argument. Next, the predicate \emph{xojque}, when applied to a human argument, has the type [ \textsc{Human} $\rightarrow$ \textsc{Human} ], and returns a parent of a human. Thus, applying this function to its own result would give the grandparent of the initial argument, that being \emph{r'e John} (or the person referred to by the name ``John''), and would finally return the value of John's grandparent, which is immutably stored in the variable \emph{o}, which, if this were a larger text, would continue to be glossed as $v_1$. Mathematically, this statement may be written as follows:
+
+\[\ v_1 \in \{\  x \in \mathcal{H} : x = p \circ p \circ n(\text{John})\  \}\]
+
+Where $v_1$ is the variable in this instance referred to by \emph{a}, $\mathcal{H}$ is the \textsc{Human} semantic class, $p$ is the predicate to find the parent of a human, and $n$ is the predicate to find a human given their name. This can be represented in a syntax tree as follows:\\
+
+\Tree [.\texttt{let} [.$v_1$ \emph{a} ] [.Class \textsc{Human} ] [.\texttt{arg} [.\texttt{pred} \emph{xojque} ] [.\texttt{arg} [.\texttt{pred} \emph{xojque} ] [.\texttt{arg} [.\texttt{pred} \emph{r'e} ] [.\texttt{arg}-\textsc{Foreign} John ] ] ] ] ]\\
+
+{\bf 2.2 \emph{la} $\cdots$ \emph{ny} --- function declaration}
 
 {\bf 2.3 \emph{gte} --- monadic \texttt{bind}}
  
@@ -126,19 +145,19 @@ In unstressed syllables, /a/ is prounced as [\textipa{v}], and /i/ as [\textipa{
 \clearpage
 {\bf \emph{3 Semantics and Lexicon}}\\
 
-There are five semantic classes in Lamda: the \texttt{Human} class, only for humans, the \texttt{Action} class, for actions that can be carried out, the \texttt{Animate} non-human class, for animals, the \texttt{Concept} class, for abstract concepts, and the \texttt{Inanimate} class, for non-abstract, non-animate physical objects. Arguments can be broken into these classes, with cognate arguments in different semantic classes having different but often related meanings. Similarly, a single predicate can have several different but related meanings when taking differnent numbers of inputs and from different classes. These are defined in section 3.2, along with their class signatures. There is also a sixth semantic class: the \texttt{Foreign} class, for loan words and proper nouns.\\
+There are five semantic classes in Lamda: the \textsc{Human} class, only for humans, the \textsc{Action} class, for actions that can be carried out, the \textsc{Animate} non-human class, for animals, the \textsc{Concept} class, for abstract concepts, and the \textsc{Inanimate} class, for non-abstract, non-animate physical objects. Arguments can be broken into these classes, with cognate arguments in different semantic classes having different but often related meanings. Similarly, a single predicate can have several different but related meanings when taking differnent numbers of inputs and from different classes. These are defined in section 3.2, along with their class signatures. There is also a sixth semantic class: the \textsc{Foreign} class, for loan words and proper nouns.\\
 
 {\bf 3.1 Arguments}\\
 
-\emph{3.1.1 The human class}
+\emph{3.1.1 The human class: \emph{j\'{u}}}
 \begin{multicols}{3}
 \noindent
-\defarg{jen}{The generic argument; a human}
+\defarg{je}{The generic argument; a human}
 \defarg{tweme}{woman}
 \defarg{z\~{n}awa}{man}
 \end{multicols}
 
-\emph{3.1.2 The action class}
+\emph{3.1.2 The action class: \emph{nacce}}
 \begin{multicols}{3}
 \noindent
 \defarg{bary}{To speak}
@@ -147,29 +166,29 @@ There are five semantic classes in Lamda: the \texttt{Human} class, only for hum
 \defarg{mxeca}{To track the time}
 \end{multicols}
 
-\emph{3.1.3 The animate non-human class}
+\emph{3.1.3 The animate non-human class: \emph{tani}}
 \begin{multicols}{3}
 \noindent
-\defarg{jen}{The generic argument; an animal}
+\defarg{je}{The generic argument; an animal}
 \defarg{tweme}{female}
 \defarg{z\~{n}awa}{male}
 \end{multicols}
 
-\emph{3.1.4 The concept class}
+\emph{3.1.4 The concept class: \emph{qu\'{e}}}
 \begin{multicols}{3}
 \noindent
 \defarg{bary}{Human speech}
 \defarg{cazte}{Mathematics and computation}
-\defarg{jen}{The generic argument; a concept}
+\defarg{je}{The generic argument; a concept}
 \defarg{lamda}{Lambda calculus}
 \defarg{mxeca}{Time}
 \end{multicols}
 
-\emph{3.1.5 The inanimate class}
+\emph{3.1.5 The inanimate class: \emph{rina}}
 \begin{multicols}{3}
 \noindent
 \defarg{cazte}{Computer}
-\defarg{jen}{The generic argument; a thing}
+\defarg{je}{The generic argument; a thing}
 \defarg{mxeca}{Clock}
 \end{multicols}
 
