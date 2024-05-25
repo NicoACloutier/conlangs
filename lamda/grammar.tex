@@ -32,7 +32,7 @@
 \newcommand{\define}[4]{\emph{#1} [ \textsc{#2} $\rightarrow$ \textsc{#3} ] : #4. \\}
 \newcommand{\defarg}[2]{\emph{#1}: ``#2.''\\}
 
-\title{Besri Lamda Grammar\\with Texts and Vocabulary}
+\title{ Grammar\\with Texts and Vocabulary}
 \subtitle{
 \emph{}
 %\vspace{0.3cm} \\ \includegraphics[scale=0.22]{title2.png}
@@ -44,15 +44,15 @@
 
 \vspace{0.25in}
 
-{\begin{center}
-\includegraphics[scale=0.25]{circleflag.png} \end{center}}
+%{\begin{center}
+%\includegraphics[scale=0.25]{circleflag.png} \end{center}}
 
 \vspace{0.25in}
 
 {\begin{center}
 \emph{}\\
 \vspace{0.5cm}
----R'e Teri-Pratxe
+--
 \end{center}}
 
 \clearpage
@@ -106,73 +106,15 @@
 \end{vowel} \end{center}}
 \end{multicols}
 
-In unstressed syllables, /a/ is prounced as [\textipa{v}], and /i/ as [\textipa{I}]. Spanish rules are followed when multiple romanizations given. For example, /si/ is written as $\langle$ci$\rangle$, but /sa/ is written as $\langle$za$\rangle$, /gi/ is written as $\langle$gui$\rangle$ but /ga/ is written as $\langle$ga$\rangle$. All syllables in Landa are (C)(C)V. Adjacent vowels are treated as nuclei of separate syllables. Stress can be varied, and is marked by the acute diacritic, unless stress is on the penultimate syllable of a multisyllabic word. If a monosyllabic word receives stress, its vowel is marked with an acute.
+In unstressed syllables, /a/ is prounced as [\textipa{v}], and /i/ as [\textipa{I}]. Spanish rules are followed when multiple romanizations given. For example, /si/ is written as $\langle$ci$\rangle$, but /sa/ is written as $\langle$za$\rangle$, /gi/ is written as $\langle$gui$\rangle$ but /ga/ is written as $\langle$ga$\rangle$. All syllables are (C)(C)V. Adjacent vowels are treated as nuclei of separate syllables. Stress can be varied, and is marked by the acute diacritic, unless stress is on the penultimate syllable of a multisyllabic word. If a monosyllabic word receives stress, its vowel is marked with an acute.
 
 \clearpage
 {\bf \emph{2 Grammar}}\\
 
-{\bf 2.1 \emph{sre} $\cdots$ \emph{xi} $\cdots$ \emph{sre} $\cdots$ --- \texttt{let}}
-
-A \texttt{let} statement can be used to define a variable, and state its equality to some known concept. In Besri Lamda, all variables begin with vowels, but the specific form is up to the speaker. Because the semantic value of variables is determined through the process of speech, the phonological structure of this variable is completely unimportant so long as it is defined properly. This means that variables have no internal strucutre in terms of morphology, and are essentially atoms that store semantic meaning.\\
-
-The first part of a \texttt{let} statement is \emph{sre}, which marks that a \texttt{let} statement is beginning. After this, the name of the variable should be given. This is then followed by \emph{xi}, which declares the semantic class of the variable, which is, just as the  variable itself, immutable. After this, another \emph{sre} is given, followed by the definition of the word. Take the following example:
-
-\begin{exe}
-\ex
-\gll sre a xi j\'{u} sre xojque xojque r'e John\\
-\texttt{let}.\textsc{begin} $v_1$ \textsc{class} \textsc{human} \texttt{let}.\textsc{end} parent parent from.name John\\
-\trans Let \emph{a} refer to John's grandparent.
-\end{exe}
-
-Here, a variable \emph{a} (glossed as variable 1, or $v_1$) is instantiated and declared to refer to an object of the \emph{j\'{u}} (\textsc{Human}) semantic class. Further, it is defined to refer to the parent of the parent of the person named John. This is achieved first through looking at the final name, and then applying the predicate \emph{r'e} to it, which is of the type [ \textsc{Foreign} $\rightarrow$ \textsc{Human} ], that is, it takes a proper noun and returns a human. Specifically, this predicate returns a human that is of a particular name given the proper noun passed as its sole argument. Next, the predicate \emph{xojque}, when applied to a human argument, has the type [ \textsc{Human} $\rightarrow$ \textsc{Human} ], and returns a parent of a human. Thus, applying this function to its own result would give the grandparent of the initial argument, that being \emph{r'e John} (or the person referred to by the name ``John''), and would finally return the value of John's grandparent, which is immutably stored in the variable \emph{a}, which, if this were a larger text, would continue to be glossed as $v_1$. Mathematically, this statement may be written as follows:
-\[\ v_1 \in \{\  x \in \mathcal{H} : x = p \circ p \circ n(\text{John})\  \}\]
-Where $v_1$ is the variable in this instance referred to by \emph{a}, $\mathcal{H}$ is the \textsc{Human} semantic class, $p$ is the predicate to find the parent of a human, and $n$ is the predicate to find a human given their name. This can be represented in a syntax tree as follows:\\
-
-\Tree [.\texttt{let} [.$v_1$ \emph{a} ] [.Class \textsc{Human} ] [.\texttt{arg} [.\texttt{pred} \emph{xojque} ] [.\texttt{arg} [.\texttt{pred} \emph{xojque} ] [.\texttt{arg} [.\texttt{pred} \emph{r'e} ] [.\texttt{arg}-\textsc{Foreign} John ] ] ] ] ]\\
-
-{\bf 2.2 \emph{la} $\cdots$ \emph{se} $\cdots$ \emph{ny} --- function declaration}
-
-Functions in Besri Lamda are mathematically pure and can be declared using the structure \emph{la} $\cdots$ \emph{se} $\cdots$ \emph{ny}. After the \emph{la}, an arbitrary name of a function is given.\footnote{By convention, these variable names begin with vowels and by grammatical necessity do not begin with \emph{e}.} After this, the particle \emph{se} signals a semantic class declaration. For functions, the first consonant of the semantic class name is used for each successive argument, ending in the return type, with the first vowel from each second class inserted as phonotactically necessary. Stress information is removed. For example, \emph{jnata} would mark a function as taking two arguments, of semantic classes human and action, respectively, and return an animate non-human value. Another example could be \emph{tquerju}, which would be a function taking arguments of types animate non-human, concept, and inanimate, and returning a type human. These can be visualized below:
-
-\begin{multicols}{2}
-\Tree [.jnata [.j \emph{j\'{u}} ] [.na \emph{nacce} ] [.ta \emph{tani} ] ]
-
-\Tree [.tquerju [.t \emph{tani} ] [.que \emph{qu\'{e}} ] [.r \emph{rina} ] [.ju \emph{j\'{u}} ] ]
-\end{multicols}
-
-After this, the particle \emph{ny} declares the body of the function itself, which is an evaluation of predefined functions and arguments in the language composed to create complexity. Arguments are referred to by common variable names. The first argument is always \emph{e}. All vowels in argument names are \emph{e}, and they all begin with this phoneme. In between these vowels, consonants are worked through two at a time, with \emph{e} being put where it is phonotactically necessary. The progression of consonants follows a standard ordering, as follows: /p/ $\Rightarrow$ /t/ $\Rightarrow$ /d/ $\Rightarrow$ /k/ $\Rightarrow$ /g/ $\Rightarrow$ /\textipa{P}/ $\Rightarrow$ /m/ $\Rightarrow$ /n/ $\Rightarrow$ /\textltailn/ $\Rightarrow$ /r/ $\Rightarrow$ /f/ $\Rightarrow$ /s/ $\Rightarrow$ /\textesh/ $\Rightarrow$ /h/ $\Rightarrow$ /w/ $\Rightarrow$ /l/. This is the same order that is given by following the IPA chart for Besri Lamda right-to-left, top-to-bottom. For example, in every function with five arguments, the five arguments are, in order: \emph{e}, \emph{epe}, \emph{ete}, \emph{ede}, and \emph{eque}. Once the end is reached, another consonant is added, producing e.g. \emph{epte} or \emph{egmene}, depending on how many arguments the function takes.\\
-
-{\bf 2.3 \emph{gte} --- monadic \texttt{bind}}
- 
-{\bf 2.4 \emph{nci} $\cdots$ \emph{nci} --- multiple monadic \texttt{bind}}
-
-{\bf 2.5 \emph{xe} $\cdots$ \emph{xe} --- \texttt{where}}
-
-{\bf 2.6 \emph{ne} --- the \texttt{Statement} monad}
-
-{\bf 2.7 \emph{nja} --- function composition}
-
-{\bf 2.8 Function calling}
-
-A function can be called simply by putting it before its argument, with the entire phrase evaluating to the result of the function call on the given argument(s). At a basic level, this can look as follows:
-
-\begin{exe}
-\ex
-\gll cazte tweme\\
-understand woman\\
-\trans \emph{To understand a woman}
-\end{exe}
-
-This gets more complicated as the number of arguments and functions being called grows, that situation being the subject of the following two sections.\\
-
-{\bf 2.9 Multi-argument functions}
-
-{\bf 2.10 Ambiguity Clearing Methods}
-
 \clearpage
 {\bf \emph{3 Semantics and Lexicon}}\\
 
-There are five semantic classes in Besri Lamda: the \textsc{Human} class, only for humans, the \textsc{Action} class, for actions that can be carried out, the \textsc{Animate} non-human class, for animals, the \textsc{Concept} class, for abstract concepts, and the \textsc{Inanimate} class, for non-abstract, non-animate physical objects. Arguments can be broken into these classes, with cognate arguments in different semantic classes having different but often related meanings. Similarly, a single predicate can have several different but related meanings when taking differnent numbers of inputs and from different classes. These are defined in section 3.2, along with their class signatures. There is also a sixth semantic class: the \textsc{Foreign} class, for loan words and proper nouns.\\
+There are five semantic classes: the \textsc{Human} class, only for humans, the \textsc{Action} class, for actions that can be carried out, the \textsc{Animate} non-human class, for animals, the \textsc{Concept} class, for abstract concepts, and the \textsc{Inanimate} class, for non-abstract, non-animate physical objects. Arguments can be broken into these classes, with cognate arguments in different semantic classes having different but often related meanings. Similarly, a single predicate can have several different but related meanings when taking differnent numbers of inputs and from different classes. These are defined in section 3.2, along with their class signatures. There is also a sixth semantic class: the \textsc{Foreign} class, for loan words and proper nouns.\\
 
 {\bf 3.1 Arguments}\\
 
